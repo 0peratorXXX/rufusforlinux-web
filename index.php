@@ -129,10 +129,10 @@ case "ur":
 <meta name="author" content="RufusForLinux contributors">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="application-name" content="Rufus for Linux">
-<meta name="msapplication-square70x70logo" content="/pics/rufus-72.png">
-<meta name="msapplication-square150x150logo" content="/pics/rufus-150.png">
-<meta name="msapplication-wide310x150logo" content="/pics/rufus-150.png">
-<meta name="msapplication-square310x310logo" content="/pics/rufus-256.png">
+<meta name="msapplication-square70x70logo" content="../pics/rufus-72.png">
+<meta name="msapplication-square150x150logo" content="../pics/rufus-150.png">
+<meta name="msapplication-wide310x150logo" content="../pics/rufus-150.png">
+<meta name="msapplication-square310x310logo" content="../pics/rufus-256.png">
 <meta name="msapplication-TileColor" content="#3f4555">
 <title>Rufus for Linux - <?= _("Create bootable USB drives and disk images");?></title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 <div id="right_column">
-<label for="lang_select"><?=_("Change language:");?></label><select name="lang_select" id="lang_select" onchange="self.location='?locale='+this.options[this.selectedIndex].value">
+<label for="lang_select"><?=_("Change language:");?></label><select name="lang_select" id="lang_select" onchange="self.location='../'+this.options[this.selectedIndex].value">
 <? foreach($langs as $code => $lang): ?>
 <option dir="ltr" <? if($short_locale == $lang[0]) echo "selected=\"selected\" ";?>value="<?= $lang[0];?>">
 <?= $lang[1]; ?>
@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		</ul></nav>	
 	</section>
 	<section class="generic_section" id="top_banner">
-		<h1><img border="0" src="/pics/rufus-128.png" srcset="/pics/rufus-128.png 1x, /pics/rufus-256.png 2x" alt="[rufus icon]"/>
+		<h1><img border="0" src="../pics/rufus-128.png" srcset="../pics/rufus-128.png 1x, ../pics/rufus-256.png 2x" alt="[rufus icon]"/>
 		<a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux">Rufus for Linux</a></h1>
 		<div class="tagline"><center><?= _("Create bootable USB drives and disk images");?></center></div>
 		<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="<?=$screenshot_duration;?>">
@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <? for ($i = 1; $i <= $nb_screenshots; $i++) {
 	$screenshot_lang = (file_exists("pics/screenshot" . $i . "_" . $short_locale . ".png")) ? $short_locale : "en";
 	printf("\t\t\t<div class=\"carousel-item%s\">\n", ($i == 1) ? " active" : "");
-	printf("\t\t\t\t<img src=\"/pics/screenshot%d_" . $screenshot_lang . ".png\" class=\"d-block\" alt=\"Rufus screenshot %d\" style=\"height: %s; margin: auto;\">\n", $i, $i, $screenshot_height);
+	printf("\t\t\t\t<img src=\"../pics/screenshot%d_" . $screenshot_lang . ".png\" class=\"d-block\" alt=\"Rufus screenshot %d\" style=\"height: %s; margin: auto;\">\n", $i, $i, $screenshot_height);
 	printf("\t\t\t</div>\n");
 } ?>
 			</div>

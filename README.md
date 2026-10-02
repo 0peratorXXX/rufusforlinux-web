@@ -54,7 +54,12 @@ docker run -p 8080:80 rufusforlinux-web
 ```
 
 Then, by accessing http://localhost:8080 you should see the original localized
-website.
+website. Note that images will *not* render in this preview: `index.php` emits
+asset paths that are relative to the locale subdirectory (`../pics/...`), which
+is how the pages are served from the `gh-pages` branch under
+`https://<user>.github.io/<repo>/<locale>/`. This server exists only to render
+the static pages that `_refresh.sh` then writes; it is not a supported way to
+host the site.
 
 If you have a `bash` compatible shell installed, you should also be able to
 generate the static localized pages, by issuing the following commands:

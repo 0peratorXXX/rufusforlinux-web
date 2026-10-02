@@ -6,7 +6,7 @@ main_region=('ar_SA' 'pt_PT' 'zh_CN' 'sr_RS')
 spec_region=('ar_IQ' 'pt_BR' 'zh_TW' 'sr_LT')
 locale_var=""
 
-echo "s/'?locale='+this.options\[this\.selectedIndex\]\.value\">/'\/'+this\.options\[this\.selectedIndex\]\.value\">/g" > cmd.sed
+: > cmd.sed
 for l in ${main_region[@]}; do
   echo "s/value=\"$l\"/value=\"${l:0:2}\"/g" >> cmd.sed
 done
@@ -63,10 +63,10 @@ cat >>$index<<EOF
        localized_index = lang.split('_')[0];
      if (supported_languages.indexOf(localized_index) < 0)
        localized_index = "en";
-     window.location = '/' + localized_index;
+     window.location = localized_index + '/';
     </script>
     <noscript>
-      <meta http-equiv="refresh" content="0; url=/en/" />
+      <meta http-equiv="refresh" content="0; url=en/" />
     </noscript>
   </body>
 </html>
