@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.0\n"
-"Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2023-04-24 13:34+0100\n"
+"Report-Msgid-Bugs-To: 0peratorXXX@users.noreply.github.com\n"
+"POT-Creation-Date: 2026-10-02 18:11+0100\n"
 "PO-Revision-Date: 2023-04-24 14:01+0100\n"
 "Last-Translator: Pete Batard <pete@akeo.ie>\n"
 "Language-Team: \n"
@@ -15,271 +15,374 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
 "X-Generator: Poedit 3.2.2\n"
 
-#: index.php:111
+#: index.php:106
 msgid "Version"
 msgstr "Versiune"
 
-#: index.php:144 index.php:286
-msgid "Create bootable USB drives the easy way"
+#: index.php:137 index.php:241
+#, fuzzy
+msgid "Create bootable USB drives and disk images"
 msgstr "Creează stick-uri USB bootabile fără efort"
 
-#: index.php:230
+#: index.php:215
 msgid "Change language:"
 msgstr "Schimbați limba:"
 
-#: index.php:239
+#: index.php:224
 msgid "Want to improve this translation?"
 msgstr "Vrei să îmbunătățești traducerea site-ului?"
 
-#: index.php:313
+#: index.php:230
+msgid "About"
+msgstr "Despre"
+
+#: index.php:231 index.php:293
+msgid "Download"
+msgstr "Descărcare"
+
+#: index.php:233 index.php:335
+msgid "Usage"
+msgstr "Utilizare"
+
+#: index.php:234
+msgid "FAQ"
+msgstr ""
+
+#: index.php:235 index.php:388
+msgid "Source Code"
+msgstr "Codul Sursă"
+
+#: index.php:268
+#, fuzzy
 msgid ""
-"Rufus is a utility that helps format and create bootable USB flash drives, "
-"such as USB keys/pendrives, memory sticks, etc."
+"Rufus for Linux is a utility that helps format and create bootable USB flash "
+"drives and disk images, such as USB keys/pendrives, memory sticks, etc."
 msgstr ""
 "Rufus este un utilitar care ajută la formatarea și crearea de drive-uri USB "
 "bootabile."
 
-#: index.php:314
+#: index.php:269
 msgid "It can be especially useful for cases where:"
 msgstr "Rufus poate fi folosit pentru:"
 
-#: index.php:316
+#: index.php:271
+#, fuzzy
 msgid ""
-"you need to create USB installation media from bootable ISOs (Windows, "
-"Linux, UEFI, etc.)"
+"you need to create USB installation media from bootable ISOs (Linux, UEFI, "
+"etc.)"
 msgstr ""
 "a crea medii de instalare USB din ISO-uri bootabile (Windows, Linux, UEFI, "
 "etc.);"
 
-#: index.php:317
+#: index.php:272
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr "a lucra pe un computer care nu are un sistem de operare instalat;"
 
-#: index.php:318
-msgid "you need to flash a BIOS or other firmware from DOS"
-msgstr "a rescrie un BIOS sau orice alt software DOS;"
+#: index.php:273
+msgid ""
+"you need to create a disk image that you can boot in QEMU, KVM or Hyper-V"
+msgstr ""
 
-#: index.php:319
+#: index.php:274
 msgid "you want to run a low-level utility"
 msgstr "a executa utilitare low-level;"
 
-#: index.php:321
-msgid "Despite its small size, Rufus provides everything you need!"
+#: index.php:276
+msgid ""
+"Rufus for Linux is device-first: pick a real USB drive to format it through "
+"pkexec, or pick an image file to create a bootable image without any "
+"privileges."
+msgstr ""
+
+#: index.php:277
+#, fuzzy
+msgid "Despite its small size, Rufus for Linux provides everything you need!"
 msgstr "Deși are o dimensiune scăzută, Rufus îți oferă tot ce îți trebuie!"
 
-#: index.php:322
+#: index.php:278
+msgid "Supported formats and options:"
+msgstr ""
+
+#: index.php:280
 msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
-" of this page."
+"File systems: FAT32, ext2/ext3/ext4 (built-in), exFAT and NTFS (via the host "
+"mkfs tools)"
+msgstr ""
+
+#: index.php:281
+msgid ""
+"Partition schemes: MBR and GPT, with the 2048 sector alignment of Windows "
+"Rufus, or 2272 for old BIOS fixes"
+msgstr ""
+
+#: index.php:282
+msgid ""
+"Bootloader: SYSLINUX v6 BIOS bootloader, installed to the MBR and the FAT32 "
+"partition boot record"
+msgstr ""
+
+#: index.php:283
+msgid "Image containers: raw, fixed VHD (native) and VHDX (via qemu-img)"
+msgstr ""
+
+#: index.php:284
+msgid ""
+"Advanced format options: bad block scan, full format, extended label and "
+"icon files, casper persistence, dirty-cow scrub pass"
+msgstr ""
+
+#: index.php:285
+msgid "Verify written data, and compute SHA-1 or SHA-256 checksums"
+msgstr ""
+
+#: index.php:287
+#, fuzzy
+msgid ""
+"A non exhaustive list of the ISO images Rufus for Linux is known to work "
+"with is also provided at the bottom of this page."
 msgstr ""
 "O listă incompletă cu ISO-urile acceptate de Rufus este prevăzută în partea "
 "de jos a acestei pagini."
 
-#: index.php:276 index.php:328
-msgid "Download"
-msgstr "Descărcare"
-
-#: index.php:329
-msgid "Latest releases:"
+#: index.php:294
+#, fuzzy
+msgid "Latest release:"
 msgstr "Ultimele lansări:"
 
-#: index.php:332
+#: index.php:297
 msgid "Link"
 msgstr ""
 
-#: index.php:333
+#: index.php:298
 msgid "Type"
 msgstr "Tip"
 
-#: index.php:334
+#: index.php:299
 msgid "Platform"
 msgstr "Platforma"
 
-#: index.php:335
+#: index.php:300
 msgid "Size"
 msgstr "Dimensiune"
 
-#: index.php:336
+#: index.php:301
 msgid "Date"
 msgstr "Data"
 
-#: index.php:340 index.php:354 index.php:361
-msgid "Standard"
-msgstr ""
+#: index.php:305
+#, fuzzy
+msgid "Source"
+msgstr "Codul Sursă"
 
 #. Abbreviation for MegaByte
-#: index.php:342 index.php:349 index.php:356 index.php:363 index.php:371
-#: index.php:486
+#: index.php:307 index.php:314 index.php:389
 msgid "MB"
 msgstr ""
 
-#: index.php:347
-msgid "Portable"
+#: index.php:312
+msgid "Debian package"
 msgstr ""
 
-#: index.php:369
-msgid "BETA"
-msgstr ""
-
-#: index.php:376 index.php:377 index.php:481
+#: index.php:318 index.php:384
 msgid "Other versions"
 msgstr "Alte versiuni"
 
-#: index.php:378
+#: index.php:319
+msgid ""
+"Both artifacts are built from the repository, with <i>make dist</i> and "
+"<i>make deb</i> respectively."
+msgstr ""
+
+#: index.php:320
 msgid "System Requirements:"
 msgstr "Cerințe de sistem:"
 
-#: index.php:379
-msgid "Windows 8 or later."
-msgstr "Windows 8 sau mai nou."
+#: index.php:321
+msgid ""
+"A C11 compiler, the GTK 3 or GTK 4 development headers, GNU Make and the "
+"gettext tools. On Debian/Ubuntu, this amounts to:"
+msgstr ""
 
-#: index.php:379
-msgid "Once downloaded, the application is ready to use."
+#: index.php:323
+#, fuzzy
+msgid "Once built, the application is ready to use."
 msgstr "Odată descărcată, aplicația este gata de utilizare."
 
-#: index.php:380
+#: index.php:323
+msgid ""
+"Formatting a real device additionally requires pkexec (polkit), while image "
+"files need no privileges at all."
+msgstr ""
+
+#: index.php:324
 msgid "Supported Languages:"
 msgstr "Limbi acceptate:"
 
-#: index.php:426
+#: index.php:331
 msgid ""
-"I will take this opportunity to express my gratitude to the translators who "
-"made it possible for Rufus, as well as this webpage, to be translated in "
-"various languages. If you find that you can use Rufus in your own language, "
-"you should really thank them!"
+"The application interface currently ships in these languages. This webpage "
+"is translated separately, with gettext, and the language selector on the "
+"right lists every translation available."
+msgstr ""
+
+#: index.php:332
+#, fuzzy
+msgid ""
+"Rufus for Linux owes a lot to the translators who made it possible for the "
+"application, as well as this webpage, to be translated in various languages. "
+"If you can use Rufus for Linux in your own language, you should really thank "
+"them!"
 msgstr ""
 "De asemenea, aș vrea să-mi exprim mulțumirea spre toți cei ce au ajutat la "
 "traducerea Rufus si a acestei pagini web in mai multe limbi."
 
-#: index.php:277 index.php:429
-msgid "Usage"
-msgstr "Utilizare"
-
-#: index.php:430
+#: index.php:336
 msgid ""
-"Download the executable and run it &ndash; no installation is necessary."
-msgstr "Descărcați executabilul și rulați-l &ndash; nu necesită instalare."
-
-#: index.php:431
-msgid "The executable is digitally signed and the signature should state:"
-msgstr "Executabilul este semnat digital și semnătura trebuie să menționeze:"
-
-#: index.php:433
-msgid "(v1.3.0 or later)"
-msgstr "(v1.3.0 sau mai nou)"
-
-#: index.php:434
-msgid "(v1.2.0 or earlier)"
-msgstr "(v1.2.0 sau mai vechi)"
-
-#: index.php:436
-msgid "Notes on DOS support:"
-msgstr "Note cu privire la suportul DOS:"
-
-#: index.php:437
-msgid ""
-"If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
-"attempt to select a keyboard layout according to the locale of your system."
+"Rufus for Linux is built from source. Clone the repository, then compile and "
+"install it:"
 msgstr ""
-"Daca vei crea un USB bootabil DOS si vei folosi o tastatură non-americană, "
-"Rufus va alege automat un format de tastatură compatibil cu limba sistemului"
-" tău."
 
-#: index.php:438
+#: index.php:340
+msgid "This installs the four binaries:"
+msgstr ""
+
+#: index.php:342
+msgid "the GTK graphical front-end"
+msgstr ""
+
+#: index.php:343
+msgid "the formatting engine"
+msgstr ""
+
+#: index.php:344
+msgid "the ISO and disk image writer"
+msgstr ""
+
+#: index.php:345
+msgid "the device discovery tool"
+msgstr ""
+
+#: index.php:347
+msgid ""
+"Run <i>man rufus-gui</i>, <i>man rufus-format</i>, <i>man rufus-copy</i> and "
+"<i>man rufus-devlist</i> for the full option reference."
+msgstr ""
+
+#: index.php:348
+msgid "Notes on privileges:"
+msgstr ""
+
+#: index.php:349
+msgid ""
+"Selecting a real USB drive launches the formatting engine through pkexec, so "
+"you will be prompted for an administrator password. Mounted partitions are "
+"unmounted automatically, or you are warned before they are wiped."
+msgstr ""
+
+#: index.php:350
+msgid ""
+"Creating an image file instead of formatting a device requires no privileges "
+"at all."
+msgstr ""
+
+#: index.php:351
 msgid "Notes on ISO Support:"
 msgstr "Note despre suportul ISO:"
 
-#: index.php:439
-#, php-format
+#: index.php:352
+#, fuzzy, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
-" an <a target=\"_blank\" %s>ISO image</a> (.iso)."
+"Rufus for Linux allows the creation of a bootable USB drive or disk image "
+"from an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
 "Toate versiunile de Rufus peste v1.1.0 permit crearea unui USB bootabil "
 "dintr-o  <a target=\"_blank\" %s>imagine ISO</a> (.iso)."
 
-#: index.php:440
-#, php-format
+#: index.php:353
+#, fuzzy, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the"
-" freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
-"target=\"_blank\" %s>CDBurnerXP</a>."
+"easy to do however, through the use of a disc burning application such as "
+"the freely available <a target=\"_blank\" %s>xorriso</a>, or with <a "
+"target=\"_blank\" %s>dd</a>."
 msgstr ""
 "Crearea unei imagini ISO pe un disc fizic sau dintr-un set de fișiere se "
 "poate face prin utilizarea unei aplicatii gratuite de scriere a CD-urilor, "
-"cum ar fi <a target=\"_blank\" %s>InfraRecorder</a> sau <a target=\"_blank\""
-" %s>CDBurnerXP</a>."
+"cum ar fi <a target=\"_blank\" %s>InfraRecorder</a> sau <a target=\"_blank\" "
+"%s>CDBurnerXP</a>."
 
-#: index.php:443
+#: index.php:356
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Întrebări frecvente"
 
-#. You are encouraged to add the translation for " (in English)." after
-#. "HERE</a></b>" as the FAQ is only available in English
-#: index.php:444
-#, php-format
-msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
+#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#: index.php:357
+#, fuzzy, php-format
+msgid ""
+"A Rufus for Linux FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr ""
-"Întrebările frecvent puse sunt disponibile <b><a target=\"_blank\" "
-"%s>AICI</a></b>."
+"Întrebările frecvent puse sunt disponibile <b><a target=\"_blank\" %s>AICI</"
+"a></b>."
 
-#: index.php:445
-#, php-format
+#: index.php:358
+#, fuzzy, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
-"target=\"_blank\" %s>send an e-mail</a>."
+"GitHub <a target=\"_blank\" %s>issue tracker</a>."
 msgstr ""
 "Pentru a ne spune părerea dvs., a raporta o eroare sau a solicita o "
-"caracteristică nouă, vă rugăm să folosiți <a target=\"_blank\" "
-"%s>GitHub</a>. Sau puteți <a target=\"_blank\" %s>trimite un e-mail</a>."
+"caracteristică nouă, vă rugăm să folosiți <a target=\"_blank\" %s>GitHub</"
+"a>. Sau puteți <a target=\"_blank\" %s>trimite un e-mail</a>."
 
-#: index.php:448
+#: index.php:361
 msgid "License"
 msgstr "Licenţă"
 
-#: index.php:449
+#: index.php:362
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
 "later."
 msgstr ""
-"<a target=\"_blank\" %s>GNU General Public License (GPL) versiunea 3</a> sau"
-" mai recentă."
+"<a target=\"_blank\" %s>GNU General Public License (GPL) versiunea 3</a> sau "
+"mai recentă."
 
-#: index.php:449
+#: index.php:362
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you"
-" respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you "
+"respect the GPLv3 license."
 msgstr ""
 "Sunteți liber să distribuiți, modificați sau chiar sa vindeți software-ul, "
 "atât timp cât respectați licența GPLv3."
 
-#: index.php:450
-#, php-format
+#: index.php:363
+#, fuzzy, php-format
 msgid ""
-"Rufus is produced in a 100%% transparent manner, from its <a "
-"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" "
-"%s>MinGW32</a> environment."
+"Rufus for Linux is produced in a 100%% transparent manner, from its <a "
+"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" %s>GNU/"
+"Linux</a> environment (C11, GTK and GNU Make)."
 msgstr ""
 "Rufus este produs într-un mod 100%%  transparent, cu o <a target=\"_blank\" "
 "%s>sursă publică</a>, folosind <a target=\"_blank\" %s>MinGW32</a> ."
 
-#. You are encouraged to append the translation for "(in English)" after
-#. "Changelog" as it is only available in English
-#: index.php:453
+#: index.php:364
+#, php-format
+msgid ""
+"Rufus for Linux is a native port of Rufus, which was created by <a "
+"target=\"_blank\" %s>Pete Batard</a>, and the third-party sources it bundles "
+"retain their own licensing."
+msgstr ""
+
+#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#: index.php:367
 msgid "Changelog"
 msgstr "Lista de modificări(in engleză)"
 
-#: index.php:279 index.php:485
-msgid "Source Code"
-msgstr "Codul Sursă"
-
-#: index.php:487
+#: index.php:390
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
@@ -287,103 +390,144 @@ msgid ""
 msgstr ""
 "Alternativ, puteți clona depozitul <a target=\"_blank\" %s>git</a> folosind:"
 
-#: index.php:489
+#: index.php:392
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgid ""
+"The port itself lives in the <a target=\"_blank\" %s>linux</a> directory, "
+"next to the bundled upstream sources in <i>src/</i>."
+msgstr ""
+
+#: index.php:393
+#, php-format
+msgid ""
+"For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
 "Pentru mai multe informații, consultați <a target=\"_blank\" %s>proiectul "
 "GitHub</a>."
 
-#: index.php:490
+#: index.php:394
+#, fuzzy
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
-"and submit patches."
+"for Linux and submit patches."
 msgstr ""
-"Dacă sunteți un dezvoltator, vă încurajăm să utilizaţi aplicaţia Rufus și "
-"să-i aduceţi îmbunătăţiri."
+"Dacă sunteți un dezvoltator, vă încurajăm să utilizaţi aplicaţia Rufus și să-"
+"i aduceţi îmbunătăţiri."
 
-#: index.php:280 index.php:493
+#: index.php:397
 msgid "Donations"
 msgstr "Donaţii"
 
-#: index.php:494
+#: index.php:398
+#, fuzzy
 msgid ""
-"Since I'm getting asked about this on regular basis, there is <b>no</b> "
+"Since we're getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
 msgstr ""
 "Deoarece sunt des întrebat despre asta, aici <b>nu</b> există niciun buton "
 "pentru donaţie."
 
-#: index.php:495
+#: index.php:399
 msgid ""
-"The main reason is that I feel that the donation system doesn't actually "
-"help software development and worse, can be guilt-inducing for users who "
-"choose not to donate."
+"Rufus for Linux is free and open source software, developed and released in "
+"the open. If it saved you some time, the most useful way to give something "
+"back is to <a target=\"_blank\" href=\"https://github.com/0peratorXXX/"
+"rufusforlinux/issues\">report bugs</a>, improve the <a target=\"_blank\" "
+"href=\"https://github.com/0peratorXXX/rufusforlinux/tree/main/linux/"
+"po\">translations</a>, or contribute code."
 msgstr ""
-"Principalul motiv este ca donatiile nu ajută mai deloc la dezvoltarea unui "
-"program, și chiar mai rău, îi poate face pe cei care nu vor sau nu pot dona "
-"să se simtă prost."
 
-#: index.php:498
-#, php-format
+#: index.php:400
+#, fuzzy
 msgid ""
-"If you really insist, you can always make a donation to the <a "
-"target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
-"reason software like Rufus is possible."
-msgstr ""
-"Dacă într-adevăr insistaţi, puteți face întotdeauna o donație pentru <a "
-"target=\"_blank\" %s>Free Software Foundation</a>, deoarece ei sunt cei care"
-" au putut face ca Rufus și multe alte programe sa existe."
-
-#: index.php:499
-msgid ""
-"At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much"
-" appreciated!"
-msgstr ""
-"In orice caz, profit de aceasta oportunitate pentru a vă spune un mare "
-"<i><u>Mulțumesc!</u></i> pentru ajutorul continuu si entuziasmul unora "
-"pentru acest mic program!"
-
-#: index.php:500
-msgid ""
-"But please continue to feel free to use Rufus without any guilt about not "
-"contributing for it financially &ndash; you should never have to!"
+"Please feel free to use Rufus for Linux without any guilt about not "
+"contributing to it financially &ndash; you should never have to!"
 msgstr ""
 "Dar vă rugăm să continuaţi să vă simţiţi liber să folosi Rufus, fără nici o "
 "vină că nu contribuiţi financiar pentru dezvoltarea lui - niciodată nu ar "
 "trebui să vă simţiţi vinovat!"
 
-#: index.php:503
-msgid "Non exhaustive list of ISOs Rufus is known to work with"
+#: index.php:403
+#, fuzzy
+msgid "Non exhaustive list of ISOs Rufus for Linux is known to work with"
 msgstr "Lista incompletă de ISO-uri pe care Rufus le accepta"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this
-#. translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
-#. Batard</a>
-#: index.php:560
-msgid "English translation by Pete Batard"
+#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
+#. <a href="mailto:you@example.com?Subject=Rufus%20Homepage%20translation">Your Name</a>
+#: index.php:447
+#, fuzzy
+msgid "English translation by Rufus for Linux contributors"
 msgstr ""
-"Traducere în română de <a "
-"href=\"mailto:girlea_alex@yahoo.com?Subject=Traducerea paginii "
-"Rufus\">Gîrlea Alexandru</a><br/>Adaptare de <a "
+"Traducere în română de <a href=\"mailto:girlea_alex@yahoo.com?"
+"Subject=Traducerea paginii Rufus\">Gîrlea Alexandru</a><br/>Adaptare de <a "
 "href=\"mailto:acuravalea@ymail.com?Subject=Traducerea paginii "
 "Rufus\">Curăvalea Antonio</a>"
 
-#: index.php:561
+#: index.php:448
 msgid "USB icon by"
 msgstr "Pictograma realizată de"
 
-#: index.php:562
+#: index.php:449
 msgid "Hosting by"
 msgstr "Găzduire web de"
 
-#: index.php:275
-msgid "About"
-msgstr "Despre"
+#~ msgid "you need to flash a BIOS or other firmware from DOS"
+#~ msgstr "a rescrie un BIOS sau orice alt software DOS;"
 
-#: index.php:278
-msgid "FAQ"
-msgstr ""
+#~ msgid "Windows 8 or later."
+#~ msgstr "Windows 8 sau mai nou."
+
+#~ msgid ""
+#~ "Download the executable and run it &ndash; no installation is necessary."
+#~ msgstr "Descărcați executabilul și rulați-l &ndash; nu necesită instalare."
+
+#~ msgid "The executable is digitally signed and the signature should state:"
+#~ msgstr ""
+#~ "Executabilul este semnat digital și semnătura trebuie să menționeze:"
+
+#~ msgid "(v1.3.0 or later)"
+#~ msgstr "(v1.3.0 sau mai nou)"
+
+#~ msgid "(v1.2.0 or earlier)"
+#~ msgstr "(v1.2.0 sau mai vechi)"
+
+#~ msgid "Notes on DOS support:"
+#~ msgstr "Note cu privire la suportul DOS:"
+
+#~ msgid ""
+#~ "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
+#~ "attempt to select a keyboard layout according to the locale of your "
+#~ "system."
+#~ msgstr ""
+#~ "Daca vei crea un USB bootabil DOS si vei folosi o tastatură non-"
+#~ "americană, Rufus va alege automat un format de tastatură compatibil cu "
+#~ "limba sistemului tău."
+
+#~ msgid ""
+#~ "The main reason is that I feel that the donation system doesn't actually "
+#~ "help software development and worse, can be guilt-inducing for users who "
+#~ "choose not to donate."
+#~ msgstr ""
+#~ "Principalul motiv este ca donatiile nu ajută mai deloc la dezvoltarea "
+#~ "unui program, și chiar mai rău, îi poate face pe cei care nu vor sau nu "
+#~ "pot dona să se simtă prost."
+
+#, php-format
+#~ msgid ""
+#~ "If you really insist, you can always make a donation to the <a "
+#~ "target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
+#~ "reason software like Rufus is possible."
+#~ msgstr ""
+#~ "Dacă într-adevăr insistaţi, puteți face întotdeauna o donație pentru <a "
+#~ "target=\"_blank\" %s>Free Software Foundation</a>, deoarece ei sunt cei "
+#~ "care au putut face ca Rufus și multe alte programe sa existe."
+
+#~ msgid ""
+#~ "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> "
+#~ "for your continuing support and enthusiasm about this little program: it "
+#~ "is much appreciated!"
+#~ msgstr ""
+#~ "In orice caz, profit de aceasta oportunitate pentru a vă spune un mare "
+#~ "<i><u>Mulțumesc!</u></i> pentru ajutorul continuu si entuziasmul unora "
+#~ "pentru acest mic program!"

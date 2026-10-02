@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
-"Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2023-04-24 13:34+0100\n"
+"Report-Msgid-Bugs-To: 0peratorXXX@users.noreply.github.com\n"
+"POT-Creation-Date: 2026-10-02 18:11+0100\n"
 "PO-Revision-Date: 2023-04-24 14:17+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,333 +18,490 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.2.2\n"
 
-#: index.php:111
+#: index.php:106
 msgid "Version"
 msgstr "版本"
 
-#: index.php:144 index.php:286
-msgid "Create bootable USB drives the easy way"
+#: index.php:137 index.php:241
+#, fuzzy
+msgid "Create bootable USB drives and disk images"
 msgstr "轻松创建 USB 启动盘"
 
-#: index.php:230
+#: index.php:215
 msgid "Change language:"
 msgstr "更改语言："
 
-#: index.php:239
+#: index.php:224
 msgid "Want to improve this translation?"
 msgstr "想要帮忙改善此翻译吗？"
 
-#: index.php:313
-msgid ""
-"Rufus is a utility that helps format and create bootable USB flash drives, "
-"such as USB keys/pendrives, memory sticks, etc."
-msgstr "Rufus 是一款格式化和创建 USB 启动盘的辅助工具。"
+#: index.php:230
+msgid "About"
+msgstr "关于"
 
-#: index.php:314
-msgid "It can be especially useful for cases where:"
-msgstr "本软件适用于以下场景："
-
-#: index.php:316
-msgid ""
-"you need to create USB installation media from bootable ISOs (Windows, "
-"Linux, UEFI, etc.)"
-msgstr "需要将可引导 ISO (Windows、Linux、UEFI 等) 刻录到 USB 安装媒介的情况"
-
-#: index.php:317
-msgid "you need to work on a system that doesn't have an OS installed"
-msgstr "需要处理未安装操作系统的设备的情况"
-
-#: index.php:318
-msgid "you need to flash a BIOS or other firmware from DOS"
-msgstr "需要在 DOS 环境下刷写 BIOS 或其他固件的情况"
-
-#: index.php:319
-msgid "you want to run a low-level utility"
-msgstr "需要运行低级工具的情况"
-
-#: index.php:321
-msgid "Despite its small size, Rufus provides everything you need!"
-msgstr "Rufus 麻雀虽小，但五脏俱全！"
-
-#: index.php:322
-msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
-" of this page."
-msgstr "本页下方列出了一部分 Rufus 所支持的 ISO 列表。"
-
-#: index.php:276 index.php:328
+#: index.php:231 index.php:293
 msgid "Download"
 msgstr "下载"
 
-#: index.php:329
-msgid "Latest releases:"
-msgstr "最新版本："
-
-#: index.php:332
-msgid "Link"
-msgstr "链接"
-
-#: index.php:333
-msgid "Type"
-msgstr "类型"
-
-#: index.php:334
-msgid "Platform"
-msgstr "平台"
-
-#: index.php:335
-msgid "Size"
-msgstr "大小"
-
-#: index.php:336
-msgid "Date"
-msgstr "日期"
-
-#: index.php:340 index.php:354 index.php:361
-msgid "Standard"
-msgstr "标准"
-
-#. Abbreviation for MegaByte
-#: index.php:342 index.php:349 index.php:356 index.php:363 index.php:371
-#: index.php:486
-msgid "MB"
-msgstr "MB"
-
-#: index.php:347
-msgid "Portable"
-msgstr "便携版"
-
-#: index.php:369
-msgid "BETA"
-msgstr ""
-
-#: index.php:376 index.php:377 index.php:481
-msgid "Other versions"
-msgstr "其他版本"
-
-#: index.php:378
-msgid "System Requirements:"
-msgstr "系统需求："
-
-#: index.php:379
-msgid "Windows 8 or later."
-msgstr "Windows 8 或更高版本。"
-
-#: index.php:379
-msgid "Once downloaded, the application is ready to use."
-msgstr "本应用即开即用。"
-
-#: index.php:380
-msgid "Supported Languages:"
-msgstr "支持语言："
-
-#: index.php:426
-msgid ""
-"I will take this opportunity to express my gratitude to the translators who "
-"made it possible for Rufus, as well as this webpage, to be translated in "
-"various languages. If you find that you can use Rufus in your own language, "
-"you should really thank them!"
-msgstr "我希望借此机会在此表达对 Rufus 及其官方网站的译者的由衷谢意。如果 Rufus 有你的语言，你也应该和我一起感谢他们！"
-
-#: index.php:277 index.php:429
+#: index.php:233 index.php:335
 msgid "Usage"
 msgstr "用法"
 
-#: index.php:430
+#: index.php:234
+msgid "FAQ"
+msgstr ""
+
+#: index.php:235 index.php:388
+msgid "Source Code"
+msgstr "源代码"
+
+#: index.php:268
+#, fuzzy
 msgid ""
-"Download the executable and run it &ndash; no installation is necessary."
-msgstr "下载后即开即用，无需安装。"
+"Rufus for Linux is a utility that helps format and create bootable USB flash "
+"drives and disk images, such as USB keys/pendrives, memory sticks, etc."
+msgstr "Rufus 是一款格式化和创建 USB 启动盘的辅助工具。"
 
-#: index.php:431
-msgid "The executable is digitally signed and the signature should state:"
-msgstr "本程序已经经过数字签名，其内容应为："
+#: index.php:269
+msgid "It can be especially useful for cases where:"
+msgstr "本软件适用于以下场景："
 
-#: index.php:433
-msgid "(v1.3.0 or later)"
-msgstr "(v1.3.0 或更高版本)"
-
-#: index.php:434
-msgid "(v1.2.0 or earlier)"
-msgstr "(v1.2.0 及更早版本)"
-
-#: index.php:436
-msgid "Notes on DOS support:"
-msgstr "DOS 支持备注："
-
-#: index.php:437
+#: index.php:271
+#, fuzzy
 msgid ""
-"If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
-"attempt to select a keyboard layout according to the locale of your system."
-msgstr "如果你创建了 DOS 启动盘，但却未使用美式键盘布局，Rufus 则将会自动根据系统语言选择键盘布局。"
+"you need to create USB installation media from bootable ISOs (Linux, UEFI, "
+"etc.)"
+msgstr "需要将可引导 ISO (Windows、Linux、UEFI 等) 刻录到 USB 安装媒介的情况"
 
-#: index.php:438
+#: index.php:272
+msgid "you need to work on a system that doesn't have an OS installed"
+msgstr "需要处理未安装操作系统的设备的情况"
+
+#: index.php:273
+msgid ""
+"you need to create a disk image that you can boot in QEMU, KVM or Hyper-V"
+msgstr ""
+
+#: index.php:274
+msgid "you want to run a low-level utility"
+msgstr "需要运行低级工具的情况"
+
+#: index.php:276
+msgid ""
+"Rufus for Linux is device-first: pick a real USB drive to format it through "
+"pkexec, or pick an image file to create a bootable image without any "
+"privileges."
+msgstr ""
+
+#: index.php:277
+#, fuzzy
+msgid "Despite its small size, Rufus for Linux provides everything you need!"
+msgstr "Rufus 麻雀虽小，但五脏俱全！"
+
+#: index.php:278
+msgid "Supported formats and options:"
+msgstr ""
+
+#: index.php:280
+msgid ""
+"File systems: FAT32, ext2/ext3/ext4 (built-in), exFAT and NTFS (via the host "
+"mkfs tools)"
+msgstr ""
+
+#: index.php:281
+msgid ""
+"Partition schemes: MBR and GPT, with the 2048 sector alignment of Windows "
+"Rufus, or 2272 for old BIOS fixes"
+msgstr ""
+
+#: index.php:282
+msgid ""
+"Bootloader: SYSLINUX v6 BIOS bootloader, installed to the MBR and the FAT32 "
+"partition boot record"
+msgstr ""
+
+#: index.php:283
+msgid "Image containers: raw, fixed VHD (native) and VHDX (via qemu-img)"
+msgstr ""
+
+#: index.php:284
+msgid ""
+"Advanced format options: bad block scan, full format, extended label and "
+"icon files, casper persistence, dirty-cow scrub pass"
+msgstr ""
+
+#: index.php:285
+msgid "Verify written data, and compute SHA-1 or SHA-256 checksums"
+msgstr ""
+
+#: index.php:287
+#, fuzzy
+msgid ""
+"A non exhaustive list of the ISO images Rufus for Linux is known to work "
+"with is also provided at the bottom of this page."
+msgstr "本页下方列出了一部分 Rufus 所支持的 ISO 列表。"
+
+#: index.php:294
+#, fuzzy
+msgid "Latest release:"
+msgstr "最新版本："
+
+#: index.php:297
+msgid "Link"
+msgstr "链接"
+
+#: index.php:298
+msgid "Type"
+msgstr "类型"
+
+#: index.php:299
+msgid "Platform"
+msgstr "平台"
+
+#: index.php:300
+msgid "Size"
+msgstr "大小"
+
+#: index.php:301
+msgid "Date"
+msgstr "日期"
+
+#: index.php:305
+#, fuzzy
+msgid "Source"
+msgstr "源代码"
+
+#. Abbreviation for MegaByte
+#: index.php:307 index.php:314 index.php:389
+msgid "MB"
+msgstr "MB"
+
+#: index.php:312
+msgid "Debian package"
+msgstr ""
+
+#: index.php:318 index.php:384
+msgid "Other versions"
+msgstr "其他版本"
+
+#: index.php:319
+msgid ""
+"Both artifacts are built from the repository, with <i>make dist</i> and "
+"<i>make deb</i> respectively."
+msgstr ""
+
+#: index.php:320
+msgid "System Requirements:"
+msgstr "系统需求："
+
+#: index.php:321
+msgid ""
+"A C11 compiler, the GTK 3 or GTK 4 development headers, GNU Make and the "
+"gettext tools. On Debian/Ubuntu, this amounts to:"
+msgstr ""
+
+#: index.php:323
+#, fuzzy
+msgid "Once built, the application is ready to use."
+msgstr "本应用即开即用。"
+
+#: index.php:323
+msgid ""
+"Formatting a real device additionally requires pkexec (polkit), while image "
+"files need no privileges at all."
+msgstr ""
+
+#: index.php:324
+msgid "Supported Languages:"
+msgstr "支持语言："
+
+#: index.php:331
+msgid ""
+"The application interface currently ships in these languages. This webpage "
+"is translated separately, with gettext, and the language selector on the "
+"right lists every translation available."
+msgstr ""
+
+#: index.php:332
+#, fuzzy
+msgid ""
+"Rufus for Linux owes a lot to the translators who made it possible for the "
+"application, as well as this webpage, to be translated in various languages. "
+"If you can use Rufus for Linux in your own language, you should really thank "
+"them!"
+msgstr ""
+"我希望借此机会在此表达对 Rufus 及其官方网站的译者的由衷谢意。如果 Rufus 有你"
+"的语言，你也应该和我一起感谢他们！"
+
+#: index.php:336
+msgid ""
+"Rufus for Linux is built from source. Clone the repository, then compile and "
+"install it:"
+msgstr ""
+
+#: index.php:340
+msgid "This installs the four binaries:"
+msgstr ""
+
+#: index.php:342
+msgid "the GTK graphical front-end"
+msgstr ""
+
+#: index.php:343
+msgid "the formatting engine"
+msgstr ""
+
+#: index.php:344
+msgid "the ISO and disk image writer"
+msgstr ""
+
+#: index.php:345
+msgid "the device discovery tool"
+msgstr ""
+
+#: index.php:347
+msgid ""
+"Run <i>man rufus-gui</i>, <i>man rufus-format</i>, <i>man rufus-copy</i> and "
+"<i>man rufus-devlist</i> for the full option reference."
+msgstr ""
+
+#: index.php:348
+msgid "Notes on privileges:"
+msgstr ""
+
+#: index.php:349
+msgid ""
+"Selecting a real USB drive launches the formatting engine through pkexec, so "
+"you will be prompted for an administrator password. Mounted partitions are "
+"unmounted automatically, or you are warned before they are wiped."
+msgstr ""
+
+#: index.php:350
+msgid ""
+"Creating an image file instead of formatting a device requires no privileges "
+"at all."
+msgstr ""
+
+#: index.php:351
 msgid "Notes on ISO Support:"
 msgstr "ISO 支持备注："
 
-#: index.php:439
-#, php-format
+#: index.php:352
+#, fuzzy, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
-" an <a target=\"_blank\" %s>ISO image</a> (.iso)."
+"Rufus for Linux allows the creation of a bootable USB drive or disk image "
+"from an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
-"Rufus 1.1.0 及更高版本支持使用 <a target=\"_blank\" %s>ISO 镜像</a> (.iso) 文件来创建引导 U 盘。"
+"Rufus 1.1.0 及更高版本支持使用 <a target=\"_blank\" %s>ISO 镜像</a> (.iso) 文"
+"件来创建引导 U 盘。"
 
-#: index.php:440
-#, php-format
+#: index.php:353
+#, fuzzy, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the"
-" freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
-"target=\"_blank\" %s>CDBurnerXP</a>."
+"easy to do however, through the use of a disc burning application such as "
+"the freely available <a target=\"_blank\" %s>xorriso</a>, or with <a "
+"target=\"_blank\" %s>dd</a>."
 msgstr ""
-"但从物理光盘或文件中制作 ISO 镜像十分简单，你只需要一款 CD 刻录工具，如免费的 <a target=\"_blank\" "
-"%s>InfraRecorder</a> 或 <a target=\"_blank\" %s>CDBurnerXP</a>。"
+"但从物理光盘或文件中制作 ISO 镜像十分简单，你只需要一款 CD 刻录工具，如免费"
+"的 <a target=\"_blank\" %s>InfraRecorder</a> 或 <a target=\"_blank\" "
+"%s>CDBurnerXP</a>。"
 
-#: index.php:443
+#: index.php:356
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "常见问题 (FAQ)"
 
-#. You are encouraged to add the translation for " (in English)." after
-#. "HERE</a></b>" as the FAQ is only available in English
-#: index.php:444
-#, php-format
-msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
+#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#: index.php:357
+#, fuzzy, php-format
+msgid ""
+"A Rufus for Linux FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr "您可<b><a target=\"_blank\" %s>在此</a></b>找到 Rufus 的常见问题。"
 
-#: index.php:445
-#, php-format
+#: index.php:358
+#, fuzzy, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
-"target=\"_blank\" %s>send an e-mail</a>."
+"GitHub <a target=\"_blank\" %s>issue tracker</a>."
 msgstr ""
-"要反馈问题、漏洞或功能请求，请使用 GitHub 的<a target=\"_blank\" %s>议题功能 (Issues)</a>，或<a "
-"target=\"_blank\" %s>向我发送电子邮件</a>。"
+"要反馈问题、漏洞或功能请求，请使用 GitHub 的<a target=\"_blank\" %s>议题功能 "
+"(Issues)</a>，或<a target=\"_blank\" %s>向我发送电子邮件</a>。"
 
-#: index.php:448
+#: index.php:361
 msgid "License"
 msgstr "许可协议"
 
-#: index.php:449
+#: index.php:362
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
 "later."
 msgstr "<a target=\"_blank\" %s>GNU 通用许可证第三版 (GPL)</a>或更高版。"
 
-#: index.php:449
+#: index.php:362
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you"
-" respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you "
+"respect the GPLv3 license."
 msgstr "在遵循 GPLv3 许可证的前提下，你可以随意分发、修改，甚至是出售本软件。"
 
-#: index.php:450
+#: index.php:363
+#, fuzzy, php-format
+msgid ""
+"Rufus for Linux is produced in a 100%% transparent manner, from its <a "
+"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" %s>GNU/"
+"Linux</a> environment (C11, GTK and GNU Make)."
+msgstr ""
+"从<a target=\"_blank\" %s>开源许可</a>，再到 <a target=\"_blank\" "
+"%s>MinGW32</a> 开发环境，Rufus 的开发流程百分百开源透明。"
+
+#: index.php:364
 #, php-format
 msgid ""
-"Rufus is produced in a 100%% transparent manner, from its <a "
-"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" "
-"%s>MinGW32</a> environment."
+"Rufus for Linux is a native port of Rufus, which was created by <a "
+"target=\"_blank\" %s>Pete Batard</a>, and the third-party sources it bundles "
+"retain their own licensing."
 msgstr ""
-"从<a target=\"_blank\" %s>开源许可</a>，再到 <a target=\"_blank\" %s>MinGW32</a> "
-"开发环境，Rufus 的开发流程百分百开源透明。"
 
-#. You are encouraged to append the translation for "(in English)" after
-#. "Changelog" as it is only available in English
-#: index.php:453
+#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#: index.php:367
 msgid "Changelog"
 msgstr "更新日志"
 
-#: index.php:279 index.php:485
-msgid "Source Code"
-msgstr "源代码"
-
-#: index.php:487
+#: index.php:390
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
 "using:"
 msgstr "或者，您可以使用以下方法克隆 <a target=\"_blank\" %s>git</a> 存储库："
 
-#: index.php:489
+#: index.php:392
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgid ""
+"The port itself lives in the <a target=\"_blank\" %s>linux</a> directory, "
+"next to the bundled upstream sources in <i>src/</i>."
+msgstr ""
+
+#: index.php:393
+#, php-format
+msgid ""
+"For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr "您可以参见 <a target=\"_blank\" %s>GitHub 项目</a>来了解详情。"
 
-#: index.php:490
+#: index.php:394
+#, fuzzy
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
-"and submit patches."
+"for Linux and submit patches."
 msgstr "如果您是开发者，我们十分欢迎您为此项目添砖加瓦。"
 
-#: index.php:280 index.php:493
+#: index.php:397
 msgid "Donations"
 msgstr "捐助"
 
-#: index.php:494
+#: index.php:398
+#, fuzzy
 msgid ""
-"Since I'm getting asked about this on regular basis, there is <b>no</b> "
+"Since we're getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
 msgstr "由于我经常会被问到此问题，所以在此特别声明，本页上<b>无</b>捐助按钮。"
 
-#: index.php:495
+#: index.php:399
 msgid ""
-"The main reason is that I feel that the donation system doesn't actually "
-"help software development and worse, can be guilt-inducing for users who "
-"choose not to donate."
-msgstr "原因之一是，本人觉得捐助系统并不能帮助本软件的开发，甚至会让未捐助的用户背上负罪感。"
-
-#: index.php:498
-#, php-format
-msgid ""
-"If you really insist, you can always make a donation to the <a "
-"target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
-"reason software like Rufus is possible."
+"Rufus for Linux is free and open source software, developed and released in "
+"the open. If it saved you some time, the most useful way to give something "
+"back is to <a target=\"_blank\" href=\"https://github.com/0peratorXXX/"
+"rufusforlinux/issues\">report bugs</a>, improve the <a target=\"_blank\" "
+"href=\"https://github.com/0peratorXXX/rufusforlinux/tree/main/linux/"
+"po\">translations</a>, or contribute code."
 msgstr ""
-"但如果您执意要捐赠的话，您可以向<a target=\"_blank\" %s>自由软件基金会</a>捐赠。该基金会是促成包括 Rufus "
-"在内的开源软件的主要推手之一。"
 
-#: index.php:499
+#: index.php:400
+#, fuzzy
 msgid ""
-"At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much"
-" appreciated!"
-msgstr "无论如何，<u>谢谢你</u>对这款小软件的不断支持！"
-
-#: index.php:500
-msgid ""
-"But please continue to feel free to use Rufus without any guilt about not "
-"contributing for it financially &ndash; you should never have to!"
+"Please feel free to use Rufus for Linux without any guilt about not "
+"contributing to it financially &ndash; you should never have to!"
 msgstr "所以不要背上任何没捐赠或没做出贡献的负罪感，尽情随意使用本软件吧！"
 
-#: index.php:503
-msgid "Non exhaustive list of ISOs Rufus is known to work with"
+#: index.php:403
+#, fuzzy
+msgid "Non exhaustive list of ISOs Rufus for Linux is known to work with"
 msgstr "Rufus 已知支持的部分 ISO 镜像列表"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this
-#. translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
-#. Batard</a>
-#: index.php:560
-msgid "English translation by Pete Batard"
+#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
+#. <a href="mailto:you@example.com?Subject=Rufus%20Homepage%20translation">Your Name</a>
+#: index.php:447
+#, fuzzy
+msgid "English translation by Rufus for Linux contributors"
 msgstr ""
-"简体中文翻译由 <a target=\"_blank\" "
-"href=\"https://twitter.com/ihipop\">ihipop</a>、<a target=\"_blank\" "
-"href=\"https://t.me/Lemonawa\">Lemonawa</a> 和 <a target=\"_blank\" "
-"href=\"https://github.com/Byacrya\">Byacrya</a> 提供"
+"简体中文翻译由 <a target=\"_blank\" href=\"https://twitter.com/"
+"ihipop\">ihipop</a>、<a target=\"_blank\" href=\"https://t.me/"
+"Lemonawa\">Lemonawa</a> 和 <a target=\"_blank\" href=\"https://github.com/"
+"Byacrya\">Byacrya</a> 提供"
 
-#: index.php:561
+#: index.php:448
 msgid "USB icon by"
 msgstr "USB 图标制作者"
 
-#: index.php:562
+#: index.php:449
 msgid "Hosting by"
 msgstr "网站托管提供商"
 
-#: index.php:275
-msgid "About"
-msgstr "关于"
+#~ msgid "you need to flash a BIOS or other firmware from DOS"
+#~ msgstr "需要在 DOS 环境下刷写 BIOS 或其他固件的情况"
 
-#: index.php:278
-msgid "FAQ"
-msgstr ""
+#~ msgid "Standard"
+#~ msgstr "标准"
+
+#~ msgid "Portable"
+#~ msgstr "便携版"
+
+#~ msgid "Windows 8 or later."
+#~ msgstr "Windows 8 或更高版本。"
+
+#~ msgid ""
+#~ "Download the executable and run it &ndash; no installation is necessary."
+#~ msgstr "下载后即开即用，无需安装。"
+
+#~ msgid "The executable is digitally signed and the signature should state:"
+#~ msgstr "本程序已经经过数字签名，其内容应为："
+
+#~ msgid "(v1.3.0 or later)"
+#~ msgstr "(v1.3.0 或更高版本)"
+
+#~ msgid "(v1.2.0 or earlier)"
+#~ msgstr "(v1.2.0 及更早版本)"
+
+#~ msgid "Notes on DOS support:"
+#~ msgstr "DOS 支持备注："
+
+#~ msgid ""
+#~ "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
+#~ "attempt to select a keyboard layout according to the locale of your "
+#~ "system."
+#~ msgstr ""
+#~ "如果你创建了 DOS 启动盘，但却未使用美式键盘布局，Rufus 则将会自动根据系统"
+#~ "语言选择键盘布局。"
+
+#~ msgid ""
+#~ "The main reason is that I feel that the donation system doesn't actually "
+#~ "help software development and worse, can be guilt-inducing for users who "
+#~ "choose not to donate."
+#~ msgstr ""
+#~ "原因之一是，本人觉得捐助系统并不能帮助本软件的开发，甚至会让未捐助的用户背"
+#~ "上负罪感。"
+
+#, php-format
+#~ msgid ""
+#~ "If you really insist, you can always make a donation to the <a "
+#~ "target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
+#~ "reason software like Rufus is possible."
+#~ msgstr ""
+#~ "但如果您执意要捐赠的话，您可以向<a target=\"_blank\" %s>自由软件基金会</a>"
+#~ "捐赠。该基金会是促成包括 Rufus 在内的开源软件的主要推手之一。"
+
+#~ msgid ""
+#~ "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> "
+#~ "for your continuing support and enthusiasm about this little program: it "
+#~ "is much appreciated!"
+#~ msgstr "无论如何，<u>谢谢你</u>对这款小软件的不断支持！"

@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
-"Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2023-04-24 13:34+0100\n"
+"Report-Msgid-Bugs-To: 0peratorXXX@users.noreply.github.com\n"
+"POT-Creation-Date: 2026-10-02 18:11+0100\n"
 "PO-Revision-Date: 2023-04-24 14:12+0100\n"
 "Last-Translator: \n"
 "Language-Team: Joe Keating <Joe_keating@live.com>\n"
@@ -19,364 +19,501 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: index.php:111
+#: index.php:106
 msgid "Version"
 msgstr "เวอร์ชั่น"
 
-#: index.php:144 index.php:286
-msgid "Create bootable USB drives the easy way"
+#: index.php:137 index.php:241
+#, fuzzy
+msgid "Create bootable USB drives and disk images"
 msgstr "สร้างไดรฟ์บูตUSBอย่างง่ายดาย"
 
-#: index.php:230
+#: index.php:215
 msgid "Change language:"
 msgstr "เปลี่ยนภาษา:"
 
-#: index.php:239
+#: index.php:224
 msgid "Want to improve this translation?"
 msgstr "ต้องการที่จะปรับปรุงการแปลนี้?"
 
-#: index.php:313
-msgid ""
-"Rufus is a utility that helps format and create bootable USB flash drives, "
-"such as USB keys/pendrives, memory sticks, etc."
-msgstr ""
-"Rufusคือโปรแกรมที่ช่วยฟอร์แมทและสร้างUSBแฟลชไดรฟ์ที่สามารถบูทได้ เช่นคีย์ "
-"USB / pendrives, Memory Sticks, ฯลฯ"
+#: index.php:230
+msgid "About"
+msgstr "เกี่ยวกับ"
 
-#: index.php:314
-msgid "It can be especially useful for cases where:"
-msgstr "Rufus อาจจะเป็นประโยชน์อย่างยิ่งในกรณีที่:"
-
-#: index.php:316
-msgid ""
-"you need to create USB installation media from bootable ISOs (Windows, "
-"Linux, UEFI, etc.)"
-msgstr ""
-"คุณจำเป็นต้องสร้างสื่อการติดตั้ง USB จาก ISOs ที่สามารถบูตได้ (Windows, "
-"Linux, UEFI ฯลฯ )"
-
-#: index.php:317
-msgid "you need to work on a system that doesn't have an OS installed"
-msgstr ""
-"คุณจำเป็นต้องทำงานในระบบที่ไม่ได้มีการติดตั้งระบบปฏิบัติการไว้ก่อนหน้า"
-
-#: index.php:318
-msgid "you need to flash a BIOS or other firmware from DOS"
-msgstr "คุณจำเป็นต้องแฟลชไบออสหรือเฟิร์มแวร์อื่น ๆ จาก DOS"
-
-#: index.php:319
-msgid "you want to run a low-level utility"
-msgstr "คุณต้องการเรียกใช้ยูทิลิตี้ระดับต่ำ"
-
-#: index.php:321
-msgid "Despite its small size, Rufus provides everything you need!"
-msgstr "แม้จะมีขนาดที่เล็กแต่Rufusมีทุกสิ่งที่คุณต้องการ!"
-
-#: index.php:322
-msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
-" of this page."
-msgstr ""
-"รายการ ISOs ที่Rufusสนับสนุนอย่างคร่าวๆ สามารถดูได้จากด้านล่างของหน้านี้"
-
-#: index.php:276 index.php:328
+#: index.php:231 index.php:293
 msgid "Download"
 msgstr "ดาวน์โหลด"
 
-#: index.php:329
-msgid "Latest releases:"
-msgstr "รุ่นล่าสุด:"
-
-#: index.php:332
-msgid "Link"
-msgstr "ลิงค์"
-
-#: index.php:333
-msgid "Type"
-msgstr "ชนิด"
-
-#: index.php:334
-msgid "Platform"
-msgstr "แพลตฟอร์ม"
-
-#: index.php:335
-msgid "Size"
-msgstr "ขนาด"
-
-#: index.php:336
-msgid "Date"
-msgstr "วันที่"
-
-#: index.php:340 index.php:354 index.php:361
-msgid "Standard"
-msgstr "มาตรฐาน"
-
-#. Abbreviation for MegaByte
-#: index.php:342 index.php:349 index.php:356 index.php:363 index.php:371
-#: index.php:486
-msgid "MB"
-msgstr "MB"
-
-#: index.php:347
-msgid "Portable"
-msgstr "แบบพกพา"
-
-#: index.php:369
-msgid "BETA"
-msgstr ""
-
-#: index.php:376 index.php:377 index.php:481
-msgid "Other versions"
-msgstr "เวอร์ชั่นอื่นๆ"
-
-#: index.php:378
-msgid "System Requirements:"
-msgstr "ข้อกำหนดขั้นต่ำของระบบ:"
-
-#: index.php:379
-msgid "Windows 8 or later."
-msgstr "Windows 8 หรือใหม่กว่า"
-
-#: index.php:379
-msgid "Once downloaded, the application is ready to use."
-msgstr "เมื่อติดตั้งแล้วโปรแกรมจะสามารถใช้งานได้ทันที"
-
-#: index.php:380
-msgid "Supported Languages:"
-msgstr "ภาษาที่ได้รับการสนับสนุน:"
-
-#: index.php:426
-msgid ""
-"I will take this opportunity to express my gratitude to the translators who "
-"made it possible for Rufus, as well as this webpage, to be translated in "
-"various languages. If you find that you can use Rufus in your own language, "
-"you should really thank them!"
-msgstr ""
-"ผมขอใช้โอกาสนี้เพื่อเป็นการแสดงความขอบคุณอย่างสุดซึ้งไปยังผู้แปลทุกคนที่ทำให้Rufusมายังจุดนี้ได้"
-" และรวมถึงผู้แปลเว็บไซต์ในหลากหลายภาษา "
-"หากคุณพบว่าคุณสามารถใช้Rufusในภาษาของคุณเอง คุณควรจะขอบคุณพวกเขา!"
-
-#: index.php:277 index.php:429
+#: index.php:233 index.php:335
 msgid "Usage"
 msgstr "วิธีการใช้งาน"
 
-#: index.php:430
-msgid ""
-"Download the executable and run it &ndash; no installation is necessary."
-msgstr "ดาวน์โหลดและเรียกใช้ &ndash; ไม่จำเป็นต้องติดตั้งโปรแกรม"
-
-#: index.php:431
-msgid "The executable is digitally signed and the signature should state:"
-msgstr "โปรแกรมมีลายเซ็นและลายเซ็นควรระบุ:"
-
-#: index.php:433
-msgid "(v1.3.0 or later)"
-msgstr "(v.1.3.0 หรือเวอร์ชั่นที่สูงกว่า)"
-
-#: index.php:434
-msgid "(v1.2.0 or earlier)"
-msgstr "(v1.2.0 หรือเวอร์ชั่นที่ต่ำกว่า)"
-
-#: index.php:436
-msgid "Notes on DOS support:"
-msgstr "หมายเหตุเกี่ยวกับการสนับสนุน DOS:"
-
-#: index.php:437
-msgid ""
-"If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
-"attempt to select a keyboard layout according to the locale of your system."
+#: index.php:234
+msgid "FAQ"
 msgstr ""
-"ถ้าคุณสร้างไดรฟ์ที่สามารถบูต DOS และใช้แป้นพิมพ์ที่ไม่ใช่ของสหรัฐอเมริกา "
-"Rufusจะพยายามที่จะเลือกรูปแบบแป้นพิมพ์ตามสถานที่จากระบบของคุณ"
 
-#: index.php:438
+#: index.php:235 index.php:388
+msgid "Source Code"
+msgstr "ซอร์สโค๊ด (คำสั่งในการเขียนโปรแกรม)"
+
+#: index.php:268
+#, fuzzy
+msgid ""
+"Rufus for Linux is a utility that helps format and create bootable USB flash "
+"drives and disk images, such as USB keys/pendrives, memory sticks, etc."
+msgstr ""
+"Rufusคือโปรแกรมที่ช่วยฟอร์แมทและสร้างUSBแฟลชไดรฟ์ที่สามารถบูทได้ เช่นคีย์ USB / pendrives, "
+"Memory Sticks, ฯลฯ"
+
+#: index.php:269
+msgid "It can be especially useful for cases where:"
+msgstr "Rufus อาจจะเป็นประโยชน์อย่างยิ่งในกรณีที่:"
+
+#: index.php:271
+#, fuzzy
+msgid ""
+"you need to create USB installation media from bootable ISOs (Linux, UEFI, "
+"etc.)"
+msgstr ""
+"คุณจำเป็นต้องสร้างสื่อการติดตั้ง USB จาก ISOs ที่สามารถบูตได้ (Windows, Linux, UEFI ฯลฯ )"
+
+#: index.php:272
+msgid "you need to work on a system that doesn't have an OS installed"
+msgstr "คุณจำเป็นต้องทำงานในระบบที่ไม่ได้มีการติดตั้งระบบปฏิบัติการไว้ก่อนหน้า"
+
+#: index.php:273
+msgid ""
+"you need to create a disk image that you can boot in QEMU, KVM or Hyper-V"
+msgstr ""
+
+#: index.php:274
+msgid "you want to run a low-level utility"
+msgstr "คุณต้องการเรียกใช้ยูทิลิตี้ระดับต่ำ"
+
+#: index.php:276
+msgid ""
+"Rufus for Linux is device-first: pick a real USB drive to format it through "
+"pkexec, or pick an image file to create a bootable image without any "
+"privileges."
+msgstr ""
+
+#: index.php:277
+#, fuzzy
+msgid "Despite its small size, Rufus for Linux provides everything you need!"
+msgstr "แม้จะมีขนาดที่เล็กแต่Rufusมีทุกสิ่งที่คุณต้องการ!"
+
+#: index.php:278
+msgid "Supported formats and options:"
+msgstr ""
+
+#: index.php:280
+msgid ""
+"File systems: FAT32, ext2/ext3/ext4 (built-in), exFAT and NTFS (via the host "
+"mkfs tools)"
+msgstr ""
+
+#: index.php:281
+msgid ""
+"Partition schemes: MBR and GPT, with the 2048 sector alignment of Windows "
+"Rufus, or 2272 for old BIOS fixes"
+msgstr ""
+
+#: index.php:282
+msgid ""
+"Bootloader: SYSLINUX v6 BIOS bootloader, installed to the MBR and the FAT32 "
+"partition boot record"
+msgstr ""
+
+#: index.php:283
+msgid "Image containers: raw, fixed VHD (native) and VHDX (via qemu-img)"
+msgstr ""
+
+#: index.php:284
+msgid ""
+"Advanced format options: bad block scan, full format, extended label and "
+"icon files, casper persistence, dirty-cow scrub pass"
+msgstr ""
+
+#: index.php:285
+msgid "Verify written data, and compute SHA-1 or SHA-256 checksums"
+msgstr ""
+
+#: index.php:287
+#, fuzzy
+msgid ""
+"A non exhaustive list of the ISO images Rufus for Linux is known to work "
+"with is also provided at the bottom of this page."
+msgstr "รายการ ISOs ที่Rufusสนับสนุนอย่างคร่าวๆ สามารถดูได้จากด้านล่างของหน้านี้"
+
+#: index.php:294
+#, fuzzy
+msgid "Latest release:"
+msgstr "รุ่นล่าสุด:"
+
+#: index.php:297
+msgid "Link"
+msgstr "ลิงค์"
+
+#: index.php:298
+msgid "Type"
+msgstr "ชนิด"
+
+#: index.php:299
+msgid "Platform"
+msgstr "แพลตฟอร์ม"
+
+#: index.php:300
+msgid "Size"
+msgstr "ขนาด"
+
+#: index.php:301
+msgid "Date"
+msgstr "วันที่"
+
+#: index.php:305
+#, fuzzy
+msgid "Source"
+msgstr "ซอร์สโค๊ด (คำสั่งในการเขียนโปรแกรม)"
+
+#. Abbreviation for MegaByte
+#: index.php:307 index.php:314 index.php:389
+msgid "MB"
+msgstr "MB"
+
+#: index.php:312
+msgid "Debian package"
+msgstr ""
+
+#: index.php:318 index.php:384
+msgid "Other versions"
+msgstr "เวอร์ชั่นอื่นๆ"
+
+#: index.php:319
+msgid ""
+"Both artifacts are built from the repository, with <i>make dist</i> and "
+"<i>make deb</i> respectively."
+msgstr ""
+
+#: index.php:320
+msgid "System Requirements:"
+msgstr "ข้อกำหนดขั้นต่ำของระบบ:"
+
+#: index.php:321
+msgid ""
+"A C11 compiler, the GTK 3 or GTK 4 development headers, GNU Make and the "
+"gettext tools. On Debian/Ubuntu, this amounts to:"
+msgstr ""
+
+#: index.php:323
+#, fuzzy
+msgid "Once built, the application is ready to use."
+msgstr "เมื่อติดตั้งแล้วโปรแกรมจะสามารถใช้งานได้ทันที"
+
+#: index.php:323
+msgid ""
+"Formatting a real device additionally requires pkexec (polkit), while image "
+"files need no privileges at all."
+msgstr ""
+
+#: index.php:324
+msgid "Supported Languages:"
+msgstr "ภาษาที่ได้รับการสนับสนุน:"
+
+#: index.php:331
+msgid ""
+"The application interface currently ships in these languages. This webpage "
+"is translated separately, with gettext, and the language selector on the "
+"right lists every translation available."
+msgstr ""
+
+#: index.php:332
+#, fuzzy
+msgid ""
+"Rufus for Linux owes a lot to the translators who made it possible for the "
+"application, as well as this webpage, to be translated in various languages. "
+"If you can use Rufus for Linux in your own language, you should really thank "
+"them!"
+msgstr ""
+"ผมขอใช้โอกาสนี้เพื่อเป็นการแสดงความขอบคุณอย่างสุดซึ้งไปยังผู้แปลทุกคนที่ทำให้Rufusมายังจุดนี้ได้ "
+"และรวมถึงผู้แปลเว็บไซต์ในหลากหลายภาษา หากคุณพบว่าคุณสามารถใช้Rufusในภาษาของคุณเอง "
+"คุณควรจะขอบคุณพวกเขา!"
+
+#: index.php:336
+msgid ""
+"Rufus for Linux is built from source. Clone the repository, then compile and "
+"install it:"
+msgstr ""
+
+#: index.php:340
+msgid "This installs the four binaries:"
+msgstr ""
+
+#: index.php:342
+msgid "the GTK graphical front-end"
+msgstr ""
+
+#: index.php:343
+msgid "the formatting engine"
+msgstr ""
+
+#: index.php:344
+msgid "the ISO and disk image writer"
+msgstr ""
+
+#: index.php:345
+msgid "the device discovery tool"
+msgstr ""
+
+#: index.php:347
+msgid ""
+"Run <i>man rufus-gui</i>, <i>man rufus-format</i>, <i>man rufus-copy</i> and "
+"<i>man rufus-devlist</i> for the full option reference."
+msgstr ""
+
+#: index.php:348
+msgid "Notes on privileges:"
+msgstr ""
+
+#: index.php:349
+msgid ""
+"Selecting a real USB drive launches the formatting engine through pkexec, so "
+"you will be prompted for an administrator password. Mounted partitions are "
+"unmounted automatically, or you are warned before they are wiped."
+msgstr ""
+
+#: index.php:350
+msgid ""
+"Creating an image file instead of formatting a device requires no privileges "
+"at all."
+msgstr ""
+
+#: index.php:351
 msgid "Notes on ISO Support:"
 msgstr "หมายเหตุเกี่ยวกับการสนับสนุน ISO:"
 
-#: index.php:439
-#, php-format
+#: index.php:352
+#, fuzzy, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
-" an <a target=\"_blank\" %s>ISO image</a> (.iso)."
+"Rufus for Linux allows the creation of a bootable USB drive or disk image "
+"from an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
-"ทุกรุ่นของRufus ตั้งแต่ v1.1.0 สามารถสร้างUSBที่บูทได้จาก <a "
-"target=\"_blank\" %s>ISO</a> (.iso)"
+"ทุกรุ่นของRufus ตั้งแต่ v1.1.0 สามารถสร้างUSBที่บูทได้จาก <a target=\"_blank\" %s>ISO</"
+"a> (.iso)"
 
-#: index.php:440
-#, php-format
+#: index.php:353
+#, fuzzy, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the"
-" freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
-"target=\"_blank\" %s>CDBurnerXP</a>."
+"easy to do however, through the use of a disc burning application such as "
+"the freely available <a target=\"_blank\" %s>xorriso</a>, or with <a "
+"target=\"_blank\" %s>dd</a>."
 msgstr ""
 "การสร้าง ISO จากแผ่นดิสก์ หรือจากไฟล์เป็นเรื่องง่ายมาก "
-"อย่างไรก็ตามคุณจะต้องใช้งานผ่านโปรแกรมเบิร์นCDที่มีสามารถดาวน์โหลดได้ฟรี "
-"เช่น <a target=\"_blank\" %s>InfraRecorder</a> หรือ <a target=\"_blank\" "
+"อย่างไรก็ตามคุณจะต้องใช้งานผ่านโปรแกรมเบิร์นCDที่มีสามารถดาวน์โหลดได้ฟรี เช่น <a "
+"target=\"_blank\" %s>InfraRecorder</a> หรือ <a target=\"_blank\" "
 "%s>CDBurnerXP</a>"
 
-#: index.php:443
+#: index.php:356
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "คำถามที่ถูกถามบ่อย (FAQ)"
 
-#. You are encouraged to add the translation for " (in English)." after
-#. "HERE</a></b>" as the FAQ is only available in English
-#: index.php:444
-#, php-format
-msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
+#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#: index.php:357
+#, fuzzy, php-format
+msgid ""
+"A Rufus for Linux FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr ""
-"สามารถดูคำถามที่ถูกถามบ่อยเดี่ยวกับRufusได้ <b><a target=\"_blank\" "
-"%s>ที่นี่</a></b>"
+"สามารถดูคำถามที่ถูกถามบ่อยเดี่ยวกับRufusได้ <b><a target=\"_blank\" %s>ที่นี่</a></b>"
 
-#: index.php:445
-#, php-format
+#: index.php:358
+#, fuzzy, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
-"target=\"_blank\" %s>send an e-mail</a>."
+"GitHub <a target=\"_blank\" %s>issue tracker</a>."
 msgstr ""
 "หากต้องการให้ข้อเสนอแนะ รายงานข้อผิดพลาด หรือ\n"
-"เพื่อให้ข้อเสนอแนะรายงานข้อผิดพลาดหรือขอให้มีการเพิ่มประสิทธิภาพโปรดใช้ GitHub <a target=\"_blank\" %s>ติดตามปัญหา</a> หรือคุณสามารถ <a target=\"_blank\" %s>ส่ง e-mail</a>"
+"เพื่อให้ข้อเสนอแนะรายงานข้อผิดพลาดหรือขอให้มีการเพิ่มประสิทธิภาพโปรดใช้ GitHub <a "
+"target=\"_blank\" %s>ติดตามปัญหา</a> หรือคุณสามารถ <a target=\"_blank\" %s>ส่ง e-"
+"mail</a>"
 
-#: index.php:448
+#: index.php:361
 msgid "License"
 msgstr "สิทธิ์การใช้งาน"
 
-#: index.php:449
+#: index.php:362
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
 "later."
-msgstr ""
-"<a target=\"_blank\" %s>ใบอนุญาตสาธารณะทั่วไป (GPL) เวอร์ชั่น 3</a> "
-"หรือสูงกว่า"
+msgstr "<a target=\"_blank\" %s>ใบอนุญาตสาธารณะทั่วไป (GPL) เวอร์ชั่น 3</a> หรือสูงกว่า"
 
-#: index.php:449
+#: index.php:362
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you"
-" respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you "
+"respect the GPLv3 license."
 msgstr ""
-"คุณสามารถแจกจ่าย แก้ไข หรือแม้กระทั่งขายซอฟต์แวร์ได้ "
-"ตราบเท่าที่คุณเคารพใบอนุญาต GPLv3"
+"คุณสามารถแจกจ่าย แก้ไข หรือแม้กระทั่งขายซอฟต์แวร์ได้ ตราบเท่าที่คุณเคารพใบอนุญาต GPLv3"
 
-#: index.php:450
+#: index.php:363
+#, fuzzy, php-format
+msgid ""
+"Rufus for Linux is produced in a 100%% transparent manner, from its <a "
+"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" %s>GNU/"
+"Linux</a> environment (C11, GTK and GNU Make)."
+msgstr ""
+"Rufusได้ถูกสร้างขึ้นมาอย่างโปร่งใส 100 %% จาก<a target=\"_blank\" %s>ซอร์สสาธารณะ</"
+"a> โดยใช้ <a target=\"_blank\" %s>mingw32</a>"
+
+#: index.php:364
 #, php-format
 msgid ""
-"Rufus is produced in a 100%% transparent manner, from its <a "
-"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" "
-"%s>MinGW32</a> environment."
+"Rufus for Linux is a native port of Rufus, which was created by <a "
+"target=\"_blank\" %s>Pete Batard</a>, and the third-party sources it bundles "
+"retain their own licensing."
 msgstr ""
-"Rufusได้ถูกสร้างขึ้นมาอย่างโปร่งใส 100 %% จาก<a target=\"_blank\" "
-"%s>ซอร์สสาธารณะ</a> โดยใช้ <a target=\"_blank\" %s>mingw32</a>"
 
-#. You are encouraged to append the translation for "(in English)" after
-#. "Changelog" as it is only available in English
-#: index.php:453
+#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#: index.php:367
 msgid "Changelog"
 msgstr "การเปลี่ยนแปลง"
 
-#: index.php:279 index.php:485
-msgid "Source Code"
-msgstr "ซอร์สโค๊ด (คำสั่งในการเขียนโปรแกรม)"
-
-#: index.php:487
+#: index.php:390
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
 "using:"
 msgstr ""
-"นอกจากนี้แล้ว คุณสามารถโคลน <a target=\"_blank\" %s>Git repository</a> "
-"โดยใช้:"
+"นอกจากนี้แล้ว คุณสามารถโคลน <a target=\"_blank\" %s>Git repository</a> โดยใช้:"
 
-#: index.php:489
+#: index.php:392
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgid ""
+"The port itself lives in the <a target=\"_blank\" %s>linux</a> directory, "
+"next to the bundled upstream sources in <i>src/</i>."
 msgstr ""
-"หากต้องการข้อมูลเพิ่มเติม โปรดดู <a target=\"_blank\" %s>GitHub project</a>."
 
-#: index.php:490
+#: index.php:393
+#, php-format
+msgid ""
+"For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgstr "หากต้องการข้อมูลเพิ่มเติม โปรดดู <a target=\"_blank\" %s>GitHub project</a>."
+
+#: index.php:394
+#, fuzzy
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
-"and submit patches."
+"for Linux and submit patches."
 msgstr "หากคุณเป็นนักพัฒนา คุณสามารถทดสอบและส่งแพทช์ของRufusได้"
 
-#: index.php:280 index.php:493
+#: index.php:397
 msgid "Donations"
 msgstr "การบริจาคเพื่อสนับสนุน"
 
-#: index.php:494
+#: index.php:398
+#, fuzzy
 msgid ""
-"Since I'm getting asked about this on regular basis, there is <b>no</b> "
+"Since we're getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
-msgstr ""
-"เนื่องจากมีการสอบถามเข้ามาเป็นจำนวนมาก ปุ่มบริจาคเงินจะ<b>ไม่มี</b> "
-"ในหน้านี้"
+msgstr "เนื่องจากมีการสอบถามเข้ามาเป็นจำนวนมาก ปุ่มบริจาคเงินจะ<b>ไม่มี</b> ในหน้านี้"
 
-#: index.php:495
+#: index.php:399
 msgid ""
-"The main reason is that I feel that the donation system doesn't actually "
-"help software development and worse, can be guilt-inducing for users who "
-"choose not to donate."
+"Rufus for Linux is free and open source software, developed and released in "
+"the open. If it saved you some time, the most useful way to give something "
+"back is to <a target=\"_blank\" href=\"https://github.com/0peratorXXX/"
+"rufusforlinux/issues\">report bugs</a>, improve the <a target=\"_blank\" "
+"href=\"https://github.com/0peratorXXX/rufusforlinux/tree/main/linux/"
+"po\">translations</a>, or contribute code."
 msgstr ""
-"เหตุผลหลักก็คือ ผมรู้สึกว่าระบบการบริจาคไม่ได้ช่วยในการพัฒนาซอฟท์แวร์ "
-"และที่แย่ไปกว่านั้นคือ "
-"ระบบบริจาคอาจจะทำให้ผู้ที่เลือกที่จะไม่บริจาครู้สึกผิดกับการที่ตัดสินใจแบบนั้น"
 
-#: index.php:498
-#, php-format
+#: index.php:400
+#, fuzzy
 msgid ""
-"If you really insist, you can always make a donation to the <a "
-"target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
-"reason software like Rufus is possible."
+"Please feel free to use Rufus for Linux without any guilt about not "
+"contributing to it financially &ndash; you should never have to!"
 msgstr ""
-"แต่หากคุณยืนยันจริงๆว่าคุณต้องการจะบริจาค คุณสามารถทำการบริจาคได้ที่ <a "
-"target=\"_blank\" %s>Free Software Foundation</a> "
-"เนื่องจากพวกเขาเป็นเหตุผลหลักที่ทำให้Rufusเกิดขึ้นได้"
-
-#: index.php:499
-msgid ""
-"At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much"
-" appreciated!"
-msgstr ""
-"สุดท้ายนี้ ผมขอใช้โอกาสนี้กล่าวคำ <i><u>ขอบคุณ</u></i> "
-"สำหรับการสนับสนุนอย่างต่อเนื่องและล้นหลามในโปรแกรมเล็กๆโปรแกรมนี้ "
-"ผมรู้สึกซาบซึ้งจริงๆ"
-
-#: index.php:500
-msgid ""
-"But please continue to feel free to use Rufus without any guilt about not "
-"contributing for it financially &ndash; you should never have to!"
-msgstr ""
-"และโปรดใช้งาน "
-"Rufusได้อย่างเสรีและสบายใจแม้ว่าคุณจะไม่ได้สนับสนุนใดๆเลยทางด้านการเงิน "
+"และโปรดใช้งาน Rufusได้อย่างเสรีและสบายใจแม้ว่าคุณจะไม่ได้สนับสนุนใดๆเลยทางด้านการเงิน "
 "คุณไม่ควรจะเลยที่จะรู้สึกแย่"
 
-#: index.php:503
-msgid "Non exhaustive list of ISOs Rufus is known to work with"
+#: index.php:403
+#, fuzzy
+msgid "Non exhaustive list of ISOs Rufus for Linux is known to work with"
 msgstr "รายการ ISOsอย่างคร่าวๆที่สามารถใช้งานได้กับ Rufus"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this
-#. translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
-#. Batard</a>
-#: index.php:560
-msgid "English translation by Pete Batard"
+#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
+#. <a href="mailto:you@example.com?Subject=Rufus%20Homepage%20translation">Your Name</a>
+#: index.php:447
+#, fuzzy
+msgid "English translation by Rufus for Linux contributors"
 msgstr "แปลเป็นภาษาไทยโดย วชิรวิทย์ ศรีมนัส"
 
-#: index.php:561
+#: index.php:448
 msgid "USB icon by"
 msgstr "ไอคอนUSBโดย"
 
-#: index.php:562
+#: index.php:449
 msgid "Hosting by"
 msgstr "โฮสติ้งโดย"
 
-#: index.php:275
-msgid "About"
-msgstr "เกี่ยวกับ"
+#~ msgid "you need to flash a BIOS or other firmware from DOS"
+#~ msgstr "คุณจำเป็นต้องแฟลชไบออสหรือเฟิร์มแวร์อื่น ๆ จาก DOS"
 
-#: index.php:278
-msgid "FAQ"
-msgstr ""
+#~ msgid "Standard"
+#~ msgstr "มาตรฐาน"
+
+#~ msgid "Portable"
+#~ msgstr "แบบพกพา"
+
+#~ msgid "Windows 8 or later."
+#~ msgstr "Windows 8 หรือใหม่กว่า"
+
+#~ msgid ""
+#~ "Download the executable and run it &ndash; no installation is necessary."
+#~ msgstr "ดาวน์โหลดและเรียกใช้ &ndash; ไม่จำเป็นต้องติดตั้งโปรแกรม"
+
+#~ msgid "The executable is digitally signed and the signature should state:"
+#~ msgstr "โปรแกรมมีลายเซ็นและลายเซ็นควรระบุ:"
+
+#~ msgid "(v1.3.0 or later)"
+#~ msgstr "(v.1.3.0 หรือเวอร์ชั่นที่สูงกว่า)"
+
+#~ msgid "(v1.2.0 or earlier)"
+#~ msgstr "(v1.2.0 หรือเวอร์ชั่นที่ต่ำกว่า)"
+
+#~ msgid "Notes on DOS support:"
+#~ msgstr "หมายเหตุเกี่ยวกับการสนับสนุน DOS:"
+
+#~ msgid ""
+#~ "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
+#~ "attempt to select a keyboard layout according to the locale of your "
+#~ "system."
+#~ msgstr ""
+#~ "ถ้าคุณสร้างไดรฟ์ที่สามารถบูต DOS และใช้แป้นพิมพ์ที่ไม่ใช่ของสหรัฐอเมริกา "
+#~ "Rufusจะพยายามที่จะเลือกรูปแบบแป้นพิมพ์ตามสถานที่จากระบบของคุณ"
+
+#~ msgid ""
+#~ "The main reason is that I feel that the donation system doesn't actually "
+#~ "help software development and worse, can be guilt-inducing for users who "
+#~ "choose not to donate."
+#~ msgstr ""
+#~ "เหตุผลหลักก็คือ ผมรู้สึกว่าระบบการบริจาคไม่ได้ช่วยในการพัฒนาซอฟท์แวร์ และที่แย่ไปกว่านั้นคือ "
+#~ "ระบบบริจาคอาจจะทำให้ผู้ที่เลือกที่จะไม่บริจาครู้สึกผิดกับการที่ตัดสินใจแบบนั้น"
+
+#, php-format
+#~ msgid ""
+#~ "If you really insist, you can always make a donation to the <a "
+#~ "target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
+#~ "reason software like Rufus is possible."
+#~ msgstr ""
+#~ "แต่หากคุณยืนยันจริงๆว่าคุณต้องการจะบริจาค คุณสามารถทำการบริจาคได้ที่ <a "
+#~ "target=\"_blank\" %s>Free Software Foundation</a> "
+#~ "เนื่องจากพวกเขาเป็นเหตุผลหลักที่ทำให้Rufusเกิดขึ้นได้"
+
+#~ msgid ""
+#~ "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> "
+#~ "for your continuing support and enthusiasm about this little program: it "
+#~ "is much appreciated!"
+#~ msgstr ""
+#~ "สุดท้ายนี้ ผมขอใช้โอกาสนี้กล่าวคำ <i><u>ขอบคุณ</u></i> "
+#~ "สำหรับการสนับสนุนอย่างต่อเนื่องและล้นหลามในโปรแกรมเล็กๆโปรแกรมนี้ ผมรู้สึกซาบซึ้งจริงๆ"

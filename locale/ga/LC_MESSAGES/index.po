@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Rufus Homepage 1.1\n"
-"Report-Msgid-Bugs-To: pete@akeo.ie\n"
-"POT-Creation-Date: 2023-04-24 13:34+0100\n"
+"Report-Msgid-Bugs-To: 0peratorXXX@users.noreply.github.com\n"
+"POT-Creation-Date: 2026-10-02 18:11+0100\n"
 "PO-Revision-Date: 2023-04-24 13:44+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -15,238 +15,336 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=6 ? 2 : n>=7 && n<=10 ? 3 : 4);\n"
+"Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=6 ? 2 : "
+"n>=7 && n<=10 ? 3 : 4);\n"
 "X-Generator: Poedit 3.2.2\n"
 
-#: index.php:111
+#: index.php:106
 msgid "Version"
 msgstr "Leagan"
 
-#: index.php:144 index.php:286
-msgid "Create bootable USB drives the easy way"
+#: index.php:137 index.php:241
+#, fuzzy
+msgid "Create bootable USB drives and disk images"
 msgstr "Cruthaigh dioscaí USB bootable ar an mbealach simplí"
 
-#: index.php:230
+#: index.php:215
 msgid "Change language:"
 msgstr "Athraigh an teanga:"
 
-#: index.php:239
+#: index.php:224
 msgid "Want to improve this translation?"
 msgstr "Ar mhaith leat an t-aistriúchán seo a fheabhsú?"
 
-#: index.php:313
+#: index.php:230
+msgid "About"
+msgstr "Maidir"
+
+#: index.php:231 index.php:293
+msgid "Download"
+msgstr "Íoslódáil"
+
+#: index.php:233 index.php:335
+msgid "Usage"
+msgstr "Conas Úsáid"
+
+#: index.php:234
+msgid "FAQ"
+msgstr ""
+
+#: index.php:235 index.php:388
+msgid "Source Code"
+msgstr "Cód foinse"
+
+#: index.php:268
+#, fuzzy
 msgid ""
-"Rufus is a utility that helps format and create bootable USB flash drives, "
-"such as USB keys/pendrives, memory sticks, etc."
+"Rufus for Linux is a utility that helps format and create bootable USB flash "
+"drives and disk images, such as USB keys/pendrives, memory sticks, etc."
 msgstr ""
 "Is feidhmchlár é Rufus a chuidíonn le dioscaí USB bootable a thionscnamh "
 "agus a chruthú, mar eochracha USB agus thiomáineann peann, bataí cuimhne, "
 "agus feistí comhchosúla eile."
 
-#: index.php:314
+#: index.php:269
 msgid "It can be especially useful for cases where:"
 msgstr "D'fhéadfadh sé a bheith an-úsáideach i gcásanna ina:"
 
-#: index.php:316
+#: index.php:271
+#, fuzzy
 msgid ""
-"you need to create USB installation media from bootable ISOs (Windows, "
-"Linux, UEFI, etc.)"
+"you need to create USB installation media from bootable ISOs (Linux, UEFI, "
+"etc.)"
 msgstr ""
 "ceanglaítear ort meáin suiteála USB a chruthú ó bootable ISOs (Windows, "
 "Linux, UEFI, agus a leithéid.)"
 
-#: index.php:317
+#: index.php:272
 msgid "you need to work on a system that doesn't have an OS installed"
 msgstr ""
 "ní mór duit oibriú ar chóras nach bhfuil córas oibriúcháin suiteáilte ann"
 
-#: index.php:318
-msgid "you need to flash a BIOS or other firmware from DOS"
-msgstr "ceanglaítear ort BIOS nó firmware eile a shuiteáil ó DOS"
+#: index.php:273
+msgid ""
+"you need to create a disk image that you can boot in QEMU, KVM or Hyper-V"
+msgstr ""
 
-#: index.php:319
+#: index.php:274
 msgid "you want to run a low-level utility"
 msgstr "ba mhaith leat iarratas ar leibhéal íseal a reáchtáil"
 
-#: index.php:321
-msgid "Despite its small size, Rufus provides everything you need!"
+#: index.php:276
+msgid ""
+"Rufus for Linux is device-first: pick a real USB drive to format it through "
+"pkexec, or pick an image file to create a bootable image without any "
+"privileges."
+msgstr ""
+
+#: index.php:277
+#, fuzzy
+msgid "Despite its small size, Rufus for Linux provides everything you need!"
 msgstr "In ainneoin a mhéid beag, soláthraíonn Rufus gach rud atá uait!"
 
-#: index.php:322
-msgid ""
-"A non exhaustive list of Rufus supported ISOs is also provided at the bottom"
-" of this page."
+#: index.php:278
+msgid "Supported formats and options:"
 msgstr ""
-"Tá liosta neamhiomlán de chomhaid ISO a fhaigheann tacaíocht ó Rufus ar fáil"
-" freisin ag bun an leathanaigh seo."
 
-#: index.php:276 index.php:328
-msgid "Download"
-msgstr "Íoslódáil"
+#: index.php:280
+msgid ""
+"File systems: FAT32, ext2/ext3/ext4 (built-in), exFAT and NTFS (via the host "
+"mkfs tools)"
+msgstr ""
 
-#: index.php:329
-msgid "Latest releases:"
+#: index.php:281
+msgid ""
+"Partition schemes: MBR and GPT, with the 2048 sector alignment of Windows "
+"Rufus, or 2272 for old BIOS fixes"
+msgstr ""
+
+#: index.php:282
+msgid ""
+"Bootloader: SYSLINUX v6 BIOS bootloader, installed to the MBR and the FAT32 "
+"partition boot record"
+msgstr ""
+
+#: index.php:283
+msgid "Image containers: raw, fixed VHD (native) and VHDX (via qemu-img)"
+msgstr ""
+
+#: index.php:284
+msgid ""
+"Advanced format options: bad block scan, full format, extended label and "
+"icon files, casper persistence, dirty-cow scrub pass"
+msgstr ""
+
+#: index.php:285
+msgid "Verify written data, and compute SHA-1 or SHA-256 checksums"
+msgstr ""
+
+#: index.php:287
+#, fuzzy
+msgid ""
+"A non exhaustive list of the ISO images Rufus for Linux is known to work "
+"with is also provided at the bottom of this page."
+msgstr ""
+"Tá liosta neamhiomlán de chomhaid ISO a fhaigheann tacaíocht ó Rufus ar fáil "
+"freisin ag bun an leathanaigh seo."
+
+#: index.php:294
+#, fuzzy
+msgid "Latest release:"
 msgstr "Eisiúintí is déanaí:"
 
-#: index.php:332
+#: index.php:297
 msgid "Link"
 msgstr "Nasc"
 
-#: index.php:333
+#: index.php:298
 msgid "Type"
 msgstr "Cineál"
 
-#: index.php:334
+#: index.php:299
 msgid "Platform"
 msgstr "Ardán"
 
-#: index.php:335
+#: index.php:300
 msgid "Size"
 msgstr "Méid"
 
-#: index.php:336
+#: index.php:301
 msgid "Date"
 msgstr "Dáta"
 
-#: index.php:340 index.php:354 index.php:361
-msgid "Standard"
-msgstr "Caighdeán"
+#: index.php:305
+#, fuzzy
+msgid "Source"
+msgstr "Cód foinse"
 
 #. Abbreviation for MegaByte
-#: index.php:342 index.php:349 index.php:356 index.php:363 index.php:371
-#: index.php:486
+#: index.php:307 index.php:314 index.php:389
 msgid "MB"
 msgstr ""
 
-#: index.php:347
-msgid "Portable"
-msgstr "Inaistrithe"
-
-#: index.php:369
-msgid "BETA"
+#: index.php:312
+msgid "Debian package"
 msgstr ""
 
-#: index.php:376 index.php:377 index.php:481
+#: index.php:318 index.php:384
 msgid "Other versions"
 msgstr "Leaganacha eile"
 
-#: index.php:378
+#: index.php:319
+msgid ""
+"Both artifacts are built from the repository, with <i>make dist</i> and "
+"<i>make deb</i> respectively."
+msgstr ""
+
+#: index.php:320
 msgid "System Requirements:"
 msgstr "Ceanglais córais:"
 
-#: index.php:379
-msgid "Windows 8 or later."
-msgstr "Windows 8 nó níos déanaí."
+#: index.php:321
+msgid ""
+"A C11 compiler, the GTK 3 or GTK 4 development headers, GNU Make and the "
+"gettext tools. On Debian/Ubuntu, this amounts to:"
+msgstr ""
 
-#: index.php:379
-msgid "Once downloaded, the application is ready to use."
+#: index.php:323
+#, fuzzy
+msgid "Once built, the application is ready to use."
 msgstr "Nuair a íoslódáladh é, tá an t-iarratas réidh le húsáid."
 
-#: index.php:380
+#: index.php:323
+msgid ""
+"Formatting a real device additionally requires pkexec (polkit), while image "
+"files need no privileges at all."
+msgstr ""
+
+#: index.php:324
 msgid "Supported Languages:"
 msgstr "Teangacha tacaithe:"
 
-#: index.php:426
+#: index.php:331
 msgid ""
-"I will take this opportunity to express my gratitude to the translators who "
-"made it possible for Rufus, as well as this webpage, to be translated in "
-"various languages. If you find that you can use Rufus in your own language, "
-"you should really thank them!"
+"The application interface currently ships in these languages. This webpage "
+"is translated separately, with gettext, and the language selector on the "
+"right lists every translation available."
+msgstr ""
+
+#: index.php:332
+#, fuzzy
+msgid ""
+"Rufus for Linux owes a lot to the translators who made it possible for the "
+"application, as well as this webpage, to be translated in various languages. "
+"If you can use Rufus for Linux in your own language, you should really thank "
+"them!"
 msgstr ""
 "Glacfaidh mé an deis seo mo bhuíochas a chur in iúl do na haistritheoirí a "
 "chuir ar chumas Rufus, chomh maith leis an leathanach gréasáin seo, iad a "
 "aistriú i dteangacha éagsúla. Má fheiceann tú gur féidir leat Rufus a úsáid "
 "i do theanga féin, ba chóir duit buíochas a ghabháil leo!"
 
-#: index.php:277 index.php:429
-msgid "Usage"
-msgstr "Conas Úsáid"
-
-#: index.php:430
+#: index.php:336
 msgid ""
-"Download the executable and run it &ndash; no installation is necessary."
+"Rufus for Linux is built from source. Clone the repository, then compile and "
+"install it:"
 msgstr ""
-"Íoslódáil an t-iarratas agus rith é &ndash; níl aon suiteáil riachtanach.."
 
-#: index.php:431
-msgid "The executable is digitally signed and the signature should state:"
+#: index.php:340
+msgid "This installs the four binaries:"
 msgstr ""
-"Tá an t-iarratas sínithe go digiteach agus ba chóir go luafadh an síniú:"
 
-#: index.php:433
-msgid "(v1.3.0 or later)"
-msgstr "(leagan 1.3.0 nó níos déanaí)"
+#: index.php:342
+msgid "the GTK graphical front-end"
+msgstr ""
 
-#: index.php:434
-msgid "(v1.2.0 or earlier)"
-msgstr "(leagan 1.2.0 nó níos luaithe)"
+#: index.php:343
+msgid "the formatting engine"
+msgstr ""
 
-#: index.php:436
-msgid "Notes on DOS support:"
-msgstr "Nótaí ar thacaíocht DOS:"
+#: index.php:344
+msgid "the ISO and disk image writer"
+msgstr ""
 
-#: index.php:437
+#: index.php:345
+msgid "the device discovery tool"
+msgstr ""
+
+#: index.php:347
 msgid ""
-"If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
-"attempt to select a keyboard layout according to the locale of your system."
+"Run <i>man rufus-gui</i>, <i>man rufus-format</i>, <i>man rufus-copy</i> and "
+"<i>man rufus-devlist</i> for the full option reference."
 msgstr ""
-"Má chruthaíonn tú tiomáint DOS bootable agus úsáid méarchlár neamh-SAM, "
-"Déanfaidh Rufus iarracht leagan amach méarchláir a roghnú de réir teanga do "
-"chórais."
 
-#: index.php:438
+#: index.php:348
+msgid "Notes on privileges:"
+msgstr ""
+
+#: index.php:349
+msgid ""
+"Selecting a real USB drive launches the formatting engine through pkexec, so "
+"you will be prompted for an administrator password. Mounted partitions are "
+"unmounted automatically, or you are warned before they are wiped."
+msgstr ""
+
+#: index.php:350
+msgid ""
+"Creating an image file instead of formatting a device requires no privileges "
+"at all."
+msgstr ""
+
+#: index.php:351
 msgid "Notes on ISO Support:"
 msgstr "Nótaí ar Thacaíocht ISO:"
 
-#: index.php:439
-#, php-format
+#: index.php:352
+#, fuzzy, php-format
 msgid ""
-"All versions of Rufus since v1.1.0 allow the creation of a bootable USB from"
-" an <a target=\"_blank\" %s>ISO image</a> (.iso)."
+"Rufus for Linux allows the creation of a bootable USB drive or disk image "
+"from an <a target=\"_blank\" %s>ISO image</a> (.iso)."
 msgstr ""
 "Ceadaíonn gach leagan de Rufus ó v1.1.0 go gcruthófaí USB bootable ó <a "
 "target=\"_blank\" %s>Íomhá ISO</a> (.iso)."
 
-#: index.php:440
-#, php-format
+#: index.php:353
+#, fuzzy, php-format
 msgid ""
 "Creating an ISO image from a physical disc or from a set of files is very "
-"easy to do however, through the use of a CD burning application, such as the"
-" freely available <a target=\"_blank\" %s>InfraRecorder</a> or <a "
-"target=\"_blank\" %s>CDBurnerXP</a>."
+"easy to do however, through the use of a disc burning application such as "
+"the freely available <a target=\"_blank\" %s>xorriso</a>, or with <a "
+"target=\"_blank\" %s>dd</a>."
 msgstr ""
 "Is furasta íomhá ISO a chruthú ó dhiosca fisiceach - nó ó shraith comhad - "
 "áfach, le feidhmchlár dó CD a úsáid, mar shampla an <a target=\"_blank\" "
 "%s>InfraRecorder</a> atá ar fáil saor in aisce, no <a target=\"_blank\" "
 "%s>CDBurnerXP</a>."
 
-#: index.php:443
+#: index.php:356
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Ceisteanna Coitianta (CC)"
 
-#. You are encouraged to add the translation for " (in English)." after
-#. "HERE</a></b>" as the FAQ is only available in English
-#: index.php:444
-#, php-format
-msgid "A Rufus FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
+#. You are encouraged to add the translation for " (in English)." after "HERE</a></b>" as the FAQ is only available in English
+#: index.php:357
+#, fuzzy, php-format
+msgid ""
+"A Rufus for Linux FAQ is available <b><a target=\"_blank\" %s>HERE</a></b>."
 msgstr "Tá CC Rufus ar fáil <b><a target=\"_blank\" %s>ANSEO</a></b>."
 
-#: index.php:445
-#, php-format
+#: index.php:358
+#, fuzzy, php-format
 msgid ""
 "To provide feedback, report a bug or request an enhancement, please use the "
-"GitHub <a target=\"_blank\" %s>issue tracker</a>. Or you can <a "
-"target=\"_blank\" %s>send an e-mail</a>."
+"GitHub <a target=\"_blank\" %s>issue tracker</a>."
 msgstr ""
 "Chun aiseolas a thabhairt, fadhb a thuairisciú nó feabhsú a iarraidh, bain "
 "úsáid as an GitHub <a target=\"_blank\" %s>rianú a eisiúint</a>. Nó, is "
 "féidir leat <a target=\"_blank\" %s>seol ríomhphost</a>."
 
-#: index.php:448
+#: index.php:361
 msgid "License"
 msgstr "Ceadúnas"
 
-#: index.php:449
+#: index.php:362
 #, php-format
 msgid ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> or "
@@ -255,36 +353,39 @@ msgstr ""
 "<a target=\"_blank\" %s>GNU General Public License (GPL) version 3</a> nó "
 "níos déanaí."
 
-#: index.php:449
+#: index.php:362
 msgid ""
-"You are free to distribute, modify or even sell the software, insofar as you"
-" respect the GPLv3 license."
+"You are free to distribute, modify or even sell the software, insofar as you "
+"respect the GPLv3 license."
 msgstr ""
 "Tá cead agat na bogearraí a dháileadh, a mhodhnú nó fiú iad a dhíol, fad is "
 "atá meas agat ar cheadúnas GPLv3."
 
-#: index.php:450
-#, php-format
+#: index.php:363
+#, fuzzy, php-format
 msgid ""
-"Rufus is produced in a 100%% transparent manner, from its <a "
-"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" "
-"%s>MinGW32</a> environment."
+"Rufus for Linux is produced in a 100%% transparent manner, from its <a "
+"target=\"_blank\" %s>public source</a>, using a <a target=\"_blank\" %s>GNU/"
+"Linux</a> environment (C11, GTK and GNU Make)."
 msgstr ""
 "Cuirtear Rufus ar fáil ar bhealach trédhearcach 100 %%, óna <a "
 "target=\"_blank\" %s>cód foinse poiblí</a>, trí thimpeallacht <a "
 "target=\"_blank\" %s>MinGW32</a> a úsáid."
 
-#. You are encouraged to append the translation for "(in English)" after
-#. "Changelog" as it is only available in English
-#: index.php:453
+#: index.php:364
+#, php-format
+msgid ""
+"Rufus for Linux is a native port of Rufus, which was created by <a "
+"target=\"_blank\" %s>Pete Batard</a>, and the third-party sources it bundles "
+"retain their own licensing."
+msgstr ""
+
+#. You are encouraged to append the translation for "(in English)" after "Changelog" as it is only available in English
+#: index.php:367
 msgid "Changelog"
 msgstr "Logáil athrú"
 
-#: index.php:279 index.php:485
-msgid "Source Code"
-msgstr "Cód foinse"
-
-#: index.php:487
+#: index.php:390
 #, php-format
 msgid ""
 "Alternatively, you can clone the <a target=\"_blank\" %s>git</a> repository "
@@ -293,99 +394,148 @@ msgstr ""
 "Nó, is féidir leat an stór <a target=\"_blank\" %s>git</a> a chlónáil ag "
 "baint úsáide as:"
 
-#: index.php:489
+#: index.php:392
 #, php-format
-msgid "For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
+msgid ""
+"The port itself lives in the <a target=\"_blank\" %s>linux</a> directory, "
+"next to the bundled upstream sources in <i>src/</i>."
+msgstr ""
+
+#: index.php:393
+#, php-format
+msgid ""
+"For more information, see the <a target=\"_blank\" %s>GitHub project</a>."
 msgstr ""
 "Le haghaidh tuilleadh eolais, féach an tionscadal <a target=\"_blank\" "
 "%s>GitHub</a>."
 
-#: index.php:490
+#: index.php:394
+#, fuzzy
 msgid ""
 "If you are a developer, you are very much encouraged to tinker with Rufus "
-"and submit patches."
+"for Linux and submit patches."
 msgstr ""
 "Más forbróir thú, moltar go láidir duit Rufus a mhodhnú agus feabhsuithe a "
 "chur isteach."
 
-#: index.php:280 index.php:493
+#: index.php:397
 msgid "Donations"
 msgstr "Síntiúis"
 
-#: index.php:494
+#: index.php:398
+#, fuzzy
 msgid ""
-"Since I'm getting asked about this on regular basis, there is <b>no</b> "
+"Since we're getting asked about this on regular basis, there is <b>no</b> "
 "donation button on this page."
 msgstr ""
 "Ós rud é go gcuirtear ceist orm go rialta, tá cnaipe síntiúis <b>níl</b> ar "
 "an leathanach seo."
 
-#: index.php:495
+#: index.php:399
 msgid ""
-"The main reason is that I feel that the donation system doesn't actually "
-"help software development and worse, can be guilt-inducing for users who "
-"choose not to donate."
+"Rufus for Linux is free and open source software, developed and released in "
+"the open. If it saved you some time, the most useful way to give something "
+"back is to <a target=\"_blank\" href=\"https://github.com/0peratorXXX/"
+"rufusforlinux/issues\">report bugs</a>, improve the <a target=\"_blank\" "
+"href=\"https://github.com/0peratorXXX/rufusforlinux/tree/main/linux/"
+"po\">translations</a>, or contribute code."
 msgstr ""
-"Is é an chúis is mó atá agam ná gur dóigh liom nach gcabhraíonn an córas "
-"síntiús le forbairt bogearraí, agus níos measa, go bhféadfadh sé a bheith "
-"ina chiontacht i measc úsáideoirí a roghnaíonn gan deonú."
 
-#: index.php:498
-#, php-format
+#: index.php:400
+#, fuzzy
 msgid ""
-"If you really insist, you can always make a donation to the <a "
-"target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
-"reason software like Rufus is possible."
-msgstr ""
-"Más mian leat, áfach, is féidir leat tabhartas a thabhairt i gcónaí don <a "
-"target=\"_blank\" %s>Free Software Foundation</a>, mar go bhfuil siad ar an "
-"gcúis is mó is féidir le bogearraí ar nós Rufus."
-
-#: index.php:499
-msgid ""
-"At any rate, I'll take this opportunity to say <i><u>thank you</u></i> for "
-"your continuing support and enthusiasm about this little program: it is much"
-" appreciated!"
-msgstr ""
-"Ainneoin sin, glacfaidh mé an deis seo chun é a rá go bhfuil <i><u>go raibh "
-"maith agat</u></i> as do thacaíocht agus díograis leanúnach faoin gclár beag"
-" seo: is mór agam é!"
-
-#: index.php:500
-msgid ""
-"But please continue to feel free to use Rufus without any guilt about not "
-"contributing for it financially &ndash; you should never have to!"
+"Please feel free to use Rufus for Linux without any guilt about not "
+"contributing to it financially &ndash; you should never have to!"
 msgstr ""
 "Ach bí ag tnúth le do thoil Rufus a úsáid gan aon chiontacht a bheith ort "
 "gan a bheith ag cur leis an airgead &ndash; níor cheart go mbeadh ort!"
 
-#: index.php:503
-msgid "Non exhaustive list of ISOs Rufus is known to work with"
+#: index.php:403
+#, fuzzy
+msgid "Non exhaustive list of ISOs Rufus for Linux is known to work with"
 msgstr "Liosta neamhiomlán de íomhánna ISO Is eol go n-oibríonn Rufus leis"
 
 #. Please insert your language and name here.
-#. If you want people to be able to e-mail you directly about this
-#. translation, you can insert your name with something like:
-#. <a href="mailto:pete@akeo.ie?Subject=Rufus%20Homepage%20translation">Pete
-#. Batard</a>
-#: index.php:560
-msgid "English translation by Pete Batard"
+#. If you want people to be able to e-mail you directly about this translation, you can insert your name with something like:
+#. <a href="mailto:you@example.com?Subject=Rufus%20Homepage%20translation">Your Name</a>
+#: index.php:447
+#, fuzzy
+msgid "English translation by Rufus for Linux contributors"
 msgstr ""
-"Aistriúchán Gaeilge ag <a href=\"mailto:saoirse@axiom-"
-"networks.org?Subject=Rufus%20Aistriúchán%20Gaeilge\">Saoirse Ó Catháin</a>"
+"Aistriúchán Gaeilge ag <a href=\"mailto:saoirse@axiom-networks.org?"
+"Subject=Rufus%20Aistriúchán%20Gaeilge\">Saoirse Ó Catháin</a>"
 
-#: index.php:561
+#: index.php:448
 msgid "USB icon by"
 msgstr "Deilbhín USB curtha ar fáil ag"
 
-#: index.php:562
+#: index.php:449
 msgid "Hosting by"
 msgstr "Is é Óglaigh na hÉireann a chuireann óstáil ar fáil"
 
-#: index.php:275
-msgid "About"
-msgstr "Maidir"
+#~ msgid "you need to flash a BIOS or other firmware from DOS"
+#~ msgstr "ceanglaítear ort BIOS nó firmware eile a shuiteáil ó DOS"
 
-#: index.php:278
-msgid "FAQ"
-msgstr ""
+#~ msgid "Standard"
+#~ msgstr "Caighdeán"
+
+#~ msgid "Portable"
+#~ msgstr "Inaistrithe"
+
+#~ msgid "Windows 8 or later."
+#~ msgstr "Windows 8 nó níos déanaí."
+
+#~ msgid ""
+#~ "Download the executable and run it &ndash; no installation is necessary."
+#~ msgstr ""
+#~ "Íoslódáil an t-iarratas agus rith é &ndash; níl aon suiteáil riachtanach.."
+
+#~ msgid "The executable is digitally signed and the signature should state:"
+#~ msgstr ""
+#~ "Tá an t-iarratas sínithe go digiteach agus ba chóir go luafadh an síniú:"
+
+#~ msgid "(v1.3.0 or later)"
+#~ msgstr "(leagan 1.3.0 nó níos déanaí)"
+
+#~ msgid "(v1.2.0 or earlier)"
+#~ msgstr "(leagan 1.2.0 nó níos luaithe)"
+
+#~ msgid "Notes on DOS support:"
+#~ msgstr "Nótaí ar thacaíocht DOS:"
+
+#~ msgid ""
+#~ "If you create a DOS bootable drive and use a non-US keyboard, Rufus will "
+#~ "attempt to select a keyboard layout according to the locale of your "
+#~ "system."
+#~ msgstr ""
+#~ "Má chruthaíonn tú tiomáint DOS bootable agus úsáid méarchlár neamh-SAM, "
+#~ "Déanfaidh Rufus iarracht leagan amach méarchláir a roghnú de réir teanga "
+#~ "do chórais."
+
+#~ msgid ""
+#~ "The main reason is that I feel that the donation system doesn't actually "
+#~ "help software development and worse, can be guilt-inducing for users who "
+#~ "choose not to donate."
+#~ msgstr ""
+#~ "Is é an chúis is mó atá agam ná gur dóigh liom nach gcabhraíonn an córas "
+#~ "síntiús le forbairt bogearraí, agus níos measa, go bhféadfadh sé a bheith "
+#~ "ina chiontacht i measc úsáideoirí a roghnaíonn gan deonú."
+
+#, php-format
+#~ msgid ""
+#~ "If you really insist, you can always make a donation to the <a "
+#~ "target=\"_blank\" %s>Free Software Foundation</a>, as they are the main "
+#~ "reason software like Rufus is possible."
+#~ msgstr ""
+#~ "Más mian leat, áfach, is féidir leat tabhartas a thabhairt i gcónaí don "
+#~ "<a target=\"_blank\" %s>Free Software Foundation</a>, mar go bhfuil siad "
+#~ "ar an gcúis is mó is féidir le bogearraí ar nós Rufus."
+
+#~ msgid ""
+#~ "At any rate, I'll take this opportunity to say <i><u>thank you</u></i> "
+#~ "for your continuing support and enthusiasm about this little program: it "
+#~ "is much appreciated!"
+#~ msgstr ""
+#~ "Ainneoin sin, glacfaidh mé an deis seo chun é a rá go bhfuil <i><u>go "
+#~ "raibh maith agat</u></i> as do thacaíocht agus díograis leanúnach faoin "
+#~ "gclár beag seo: is mór agam é!"

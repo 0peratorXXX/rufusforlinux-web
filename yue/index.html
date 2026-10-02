@@ -3,17 +3,17 @@
 <html lang="yue-HK" dir="ltr">
 <head profile="http://www.w3.org/2005/10/profile">
 <meta charset='utf-8'>
-<meta name="description" content="Rufus: Create bootable USB drives the easy way">
-<meta name="keywords" content="Application,BIOS,Boot,Bootable,DOS,Download,Drive,Fast,Flash,Formatting,FreeDOS,Linux,Portable,Rufus,Small,Standlone,UEFI,USB,Utility,Windows">
-<meta name="author" content="Pete Batard">
+<meta name="description" content="Rufus for Linux: Create bootable USB drives and disk images the easy way">
+<meta name="keywords" content="Application,BIOS,Boot,Bootable,Download,Drive,Ext4,exFAT,Fast,Flash,FAT32,Formatting,FreeDOS,GPT,GTK,ISO,Linux,MBR,Ntfs,Portable,Rufus,SYSLINUX,Uefi,USB,Utility">
+<meta name="author" content="RufusForLinux contributors">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="application-name" content="Rufus">
+<meta name="application-name" content="Rufus for Linux">
 <meta name="msapplication-square70x70logo" content="/pics/rufus-72.png">
 <meta name="msapplication-square150x150logo" content="/pics/rufus-150.png">
 <meta name="msapplication-wide310x150logo" content="/pics/rufus-150.png">
 <meta name="msapplication-square310x310logo" content="/pics/rufus-256.png">
 <meta name="msapplication-TileColor" content="#3f4555">
-<title>Rufus - 話都冇咁易 - 就整到隻 USB Boot 機手指 ~</title>
+<title>Rufus for Linux - Create bootable USB drives and disk images</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <script>
 function setCookie(name, value, days) {
@@ -39,13 +39,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	if (getCookie('display_cookie_notice') != 'no')
 		document.getElementById('cookie-notice').style.display = 'block';
 });
-</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6PCK0CM7G9"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-6PCK0CM7G9');
 </script>
 <style type="text/css">
 	* {	--bs-body-line-height: 1.2;	scroll-behavior: smooth; }
@@ -227,42 +220,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 🏴󠁧󠁢󠁷󠁬󠁳󠁿 Welsh (Cymraeg)</option>
 </select>
 <div class="hide_on_small_screens">
-<a target="_blank" href="https://github.com/pbatard/rufus/wiki/Localization#wiki-Editing_an_existing_homepage_translation">想個翻譯再做得好啲？</a>&nbsp;<br/>
-&nbsp;<br/>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Rufus - Sidebar -->
-<ins class="adsbygoogle"
-	style="display:inline-block;width:160px;height:600px"
-	data-ad-client="ca-pub-8924382055379825"
-	data-ad-slot="8722233764"
-	data-ad-format="rectangle, vertical"
-	data-full-width-responsive="false"></ins>
-<script>
-	(adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
-	(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
+<a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux-web">想個翻譯再做得好啲？</a></div>
 </div>
 <div id="container">
-	<section class="generic_section" id="ad1">
-		<hr style="width:728px;">
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- Rufus - Banner -->
-		<ins class="adsbygoogle"
-			style="display:inline-block;width:728px;height:90px"
-			data-ad-client="ca-pub-8924382055379825"
-			data-ad-slot="7142613500"
-			data-ad-format="rectangle, horizontal"
-			data-full-width-responsive="false"></ins>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = 1;
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-		<hr style="width:728px;">
-	</section>
 	<section class="generic_section" id="menu">
 		<nav class="menu" id="Menu"><ul>
-			<li><a href="#about">About</a></li>
+			<li><a href="#about">關於</a></li>
 			<li><a href="#download">下載</a></li>
 			<li><a href="#changelog">Changelog</a></li>
 			<li><a href="#usage">點用</a></li>
@@ -272,8 +235,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	</section>
 	<section class="generic_section" id="top_banner">
 		<h1><img border="0" src="/pics/rufus-128.png" srcset="/pics/rufus-128.png 1x, /pics/rufus-256.png 2x" alt="[rufus icon]"/>
-		<a target="_blank" href="https://github.com/pbatard/rufus">Rufus</a></h1>
-		<div class="tagline"><center>話都冇咁易 - 就整到隻 USB Boot 機手指 ~</center></div>
+		<a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux">Rufus for Linux</a></h1>
+		<div class="tagline"><center>Create bootable USB drives and disk images</center></div>
 		<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
 			<div class="carousel-inner">
 			<div class="carousel-item active">
@@ -311,20 +274,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		<p>&nbsp;</p>
 	</section>
 	<section class="generic_section" id="about">
-		<p>有咗 Rufus，就有得格式化同埋整返隻 USB Boot 機手指，好似 USB 隨身手指、Memory Stick 卡咁 - 得咗。</p>
+		<p>Rufus for Linux is a utility that helps format and create bootable USB flash drives and disk images, such as USB keys/pendrives, memory sticks, etc.</p>
 		<p>試過下低咁嘅情形，就知佢幫到你手：</p>
 		<ul>
-			<li>想入隻 ISO 裝機檔落 USB Boot 機手指嗰陣 - 例如 Windows、Linux、UEFI 系統 之類。</li>
+			<li>you need to create USB installation media from bootable ISOs (Linux, UEFI, etc.)</li>
 			<li>想用部冇裝 OS 嘅機嗰陣</li>
-			<li>想洗洗 BIOS 或者另類 DOS 韌體嗰陣</li>
+			<li>you need to create a disk image that you can boot in QEMU, KVM or Hyper-V</li>
 			<li>想行啲底層實用架撐嗰陣</li>
 		</ul>
-		<p>細還細，齊還齊 - Rufus 樣樣都有齊！</p>
-		<p>碌落網頁最底，嗰到寫低咗 Rufus 行到邊類型系統嘅 ISO 檔。 <a href="#ref1"><sup>(1)</sup></a></p>
-			</section>
+		<p>Rufus for Linux is device-first: pick a real USB drive to format it through pkexec, or pick an image file to create a bootable image without any privileges.</p>
+		<p>Despite its small size, Rufus for Linux provides everything you need!</p>
+		<h4>Supported formats and options:</h4>
+		<ul>
+			<li>File systems: FAT32, ext2/ext3/ext4 (built-in), exFAT and NTFS (via the host mkfs tools)</li>
+			<li>Partition schemes: MBR and GPT, with the 2048 sector alignment of Windows Rufus, or 2272 for old BIOS fixes</li>
+			<li>Bootloader: SYSLINUX v6 BIOS bootloader, installed to the MBR and the FAT32 partition boot record</li>
+			<li>Image containers: raw, fixed VHD (native) and VHDX (via qemu-img)</li>
+			<li>Advanced format options: bad block scan, full format, extended label and icon files, casper persistence, dirty-cow scrub pass</li>
+			<li>Verify written data, and compute SHA-1 or SHA-256 checksums</li>
+		</ul>
+		<p>A non exhaustive list of the ISO images Rufus for Linux is known to work with is also provided at the bottom of this page. <a href="#ref1"><sup>(1)</sup></a></p>
+		<p dir="ltr"><b><font color="#dd8800"><u>CALLING ON NEW TRANSLATORS!</u></font></b></p>
+		<p dir="ltr">The Rufus for Linux application would like to request <b>your</b> help with its translations: the catalogs live in the <a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux/tree/main/linux/po">linux/po</a> directory, and this webpage is translated with gettext as well.</p>
+		<p dir="ltr">If you think you are up to the task, please have a look at the <a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux#internationalisation">internationalisation section</a>.</p>
+	</section>
 	<section class="generic_section" id="download">
 		<h2 style="border: 4px solid #a09a8a;"><span style="font-size: 133%">下載</span></h2>
-			<p><b>最新版本：</b></p>
+			<p><b>Latest release:</b></p>
 			<table cellspacing="1" cellpadding="6" border="0">
 				<tr>
 					<th class="title" width=220>連結</th>
@@ -334,205 +310,150 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					<th class="title" width=120>日期</th>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.15/rufus-4.15.exe"><code>rufus-4.15.exe</code></a></td>
-					<td class="item">標準</td>
-					<td class="item">Windows x64</td>
-					<td class="item"><span dir="ltr">1.9 MB</span></td>
-					<td class="item">2026.06.30</td>
+					<td class="item"><a href="https://github.com/0peratorXXX/rufusforlinux/archive/refs/heads/main.tar.gz"><code>rufusforlinux-0.1.0.tar.gz</code></a></td>
+					<td class="item">Source</td>
+					<td class="item">Linux</td>
+					<td class="item"><span dir="ltr">7.5 MB</span></td>
+					<td class="item">2026.09.13</td>
 				</tr>
 				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.15/rufus-4.15p.exe"><code>rufus-4.15p.exe</code></a></td>
-					<td class="item">行街版</td>
-					<td class="item">Windows x64</td>
-					<td class="item"><span dir="ltr">1.9 MB</span></td>
-					<td class="item">2026.06.30</td>
-				</tr>
-				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.15/rufus-4.15_x86.exe"><code>rufus-4.15_x86.exe</code></a></td>
-					<td class="item">標準</td>
-					<td class="item">Windows x86</td>
-					<td class="item"><span dir="ltr">1.8 MB</span></td>
-					<td class="item">2026.06.30</td>
-				</tr>
-				<tr>
-					<td class="item"><a href="https://github.com/pbatard/rufus/releases/download/v4.15/rufus-4.15_arm64.exe"><code>rufus-4.15_arm64.exe</code></a></td>
-					<td class="item">標準</td>
-					<td class="item">Windows ARM64</td>
-					<td class="item"><span dir="ltr">5.2 MB</span></td>
-					<td class="item">2026.06.30</td>
+					<td class="item"><a href="https://github.com/0peratorXXX/rufusforlinux#debian-package"><code>rufusforlinux-0.1.0_&lt;arch&gt;.deb</code></a></td>
+					<td class="item">Debian package</td>
+					<td class="item">Linux</td>
+					<td class="item"><span dir="ltr">1.1 MB</span></td>
+					<td class="item">2026.09.13</td>
 				</tr>
 			</table>&nbsp;
-			<p><span style="font-size: 110%"><a href="/downloads/">其他版號 (GitHub)</a><br/>
-			<a target="_blank" href="https://dappcdn.com/download/system-rescue/rufus">其他版號 (dAppCDN)</a></span></p>
+			<p><span style="font-size: 110%"><a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux/releases">其他版號 (GitHub)</a></span></p>
+			<p>Both artifacts are built from the repository, with <i>make dist</i> and <i>make deb</i> respectively.</p>
 		<h4>執行所需</h4>
-		<p>Windows 8或更高版本。 Down 完唔使裝就用得。</p>
+		<p>A C11 compiler, the GTK 3 or GTK 4 development headers, GNU Make and the gettext tools. On Debian/Ubuntu, this amounts to:</p>
+		<pre dir="ltr">$ sudo apt install build-essential libgtk-4-dev gettext</pre>
+		<p>Once built, the application is ready to use. Formatting a real device additionally requires pkexec (polkit), while image files need no privileges at all.</p>
 		<h4>支援多種語言：</h4>
 		<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><i>Bahasa Indonesia</i></td><td>,&nbsp;</td>
-			<td><i>Bahasa Malaysia</i></td><td>,&nbsp;</td>
-			<td><i>Български</i></td><td>,&nbsp;</td>
-			<td><i>Čeština</i></td><td>,&nbsp;</td>
-			<td><i>Dansk</i></td><td>,&nbsp;</td>
 			<td><i>Deutsch</i></td><td>,&nbsp;</td>
-			<td><i>Ελληνικά</i></td><td>,&nbsp;</td>
-		</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><i>English</i></td><td>,&nbsp;</td>
-			<td><i>Español</i></td><td>,&nbsp;</td>
-			<td><i>Français</i></td><td>,&nbsp;</td>
-			<td><i>Hrvatski</i></td><td>,&nbsp;</td>
-			<td><i>Italiano</i></td><td>,&nbsp;</td>
-			<td><i>Latviešu</i></td><td>,&nbsp;</td>
-			<td><i>Lietuvių</i></td><td>,&nbsp;</td>
-			<td><i>Magyar</i></td><td>,&nbsp;</td>
-			<td><i>Nederlands</i></td><td>,&nbsp;</td>
-			<td><i>Norsk</i></td><td>,&nbsp;</td>
-		</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><i>Polski</i></td><td>,&nbsp;</td>
-			<td><i>Português</i></td><td>,&nbsp;</td>
-			<td><i>Português do Brasil</i></td><td>,&nbsp;</td>
-			<td><i>Русский</i></td><td>,&nbsp;</td>
-			<td><i>Română</i></td><td>,&nbsp;</td>
-			<td><i>Slovensky</i></td><td>,&nbsp;</td>
-			<td><i>Slovenščina</i></td><td>,&nbsp;</td>
-			<td><i>Srpski</i></td><td>,&nbsp;</td>
-		</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><i>Suomi</i></td><td>,&nbsp;</td>
-			<td><i>Svenska</i></td><td>,&nbsp;</td>
-			<td><i>Tiếng&nbsp;Việt</i></td><td>,&nbsp;</td>
-			<td><i>Türkçe</i></td><td>,&nbsp;</td>
-			<td><i>Українська</i></td><td>,&nbsp;</td>
-			<td>简体中文</td><td>,&nbsp;</td>
-			<td>正體中文</td><td>,&nbsp;</td>
-			<td>日本語</td><td>,&nbsp;</td>
-			<td>한국어</td><td>,&nbsp;</td>
-			<td>ไทย</td><td>,&nbsp;</td>
-		</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td>עברית</td><td>,&nbsp;</td>
-			<td>العربية</td><td>,&nbsp;</td>
-			<td>پارسی</td><td>.</td>
+			<td><i>Français</i></td>
 		</tr></table>
 		&nbsp;
-		<p>Rufus 作者謝意：「我想借今次機會多謝咁多位有份翻譯嘅義工 - 冇佢哋就冇今日嘅 Rufus。就算係個網頁本身，都係一手一腳譯返嚟，先累積到今日廿靈隻語言咁多。用 Rufus 嗰陣睇得到平時嘅語言，相信都係值得感恩嘅！」</p>
+		<p>The application interface currently ships in these languages. This webpage is translated separately, with gettext, and the language selector on the right lists every translation available.</p>
+		<p>Rufus for Linux owes a lot to the translators who made it possible for the application, as well as this webpage, to be translated in various languages. If you can use Rufus for Linux in your own language, you should really thank them!</p>
 	</section>
 	<section class="generic_section" id="usage">
 		<h2>點用</h2>
-		<p>Down 完就即刻用得，唔使裝。</p>
-		<p>個 .exe 檔已經攞咗 數碼簽署，正常嚟講，個簽署會標有：</p>
+		<p>Rufus for Linux is built from source. Clone the repository, then compile and install it:</p>
+		<pre dir="ltr">$ git clone https://github.com/0peratorXXX/rufusforlinux
+$ cd rufusforlinux/linux && make
+$ sudo make install PREFIX=/usr/local</pre>
+		<p>This installs the four binaries:</p>
 		<ul>
-			<li><i>"Akeo Consulting"</i> （版號 1.3.0 或者再後啲）</li>
-			<li><i>"Pete Batard - Open Source Developer"</i> （版號 1.2.0 或者再早啲）</li>
+			<li><code>rufus-gui</code> &ndash; the GTK graphical front-end</li>
+			<li><code>rufus-format</code> &ndash; the formatting engine</li>
+			<li><code>rufus-copy</code> &ndash; the ISO and disk image writer</li>
+			<li><code>rufus-devlist</code> &ndash; the device discovery tool</li>
 		</ul>
-		<h4>DOS 支援後話：</h4>
-		<p>如果做完隻 DOS Boot 機手指，又冇用到美式鍵盤佈局， Rufus 就會根據系統設置，判斷所在地域先，再揀個啱你嘅輸入佈局。</p>
+		<p>Run <i>man rufus-gui</i>, <i>man rufus-format</i>, <i>man rufus-copy</i> and <i>man rufus-devlist</i> for the full option reference.</p>
+		<h4>Notes on privileges:</h4>
+		<p>Selecting a real USB drive launches the formatting engine through pkexec, so you will be prompted for an administrator password. Mounted partitions are unmounted automatically, or you are warned before they are wiped.</p>
+		<p>Creating an image file instead of formatting a device requires no privileges at all.</p>
 		<h4>ISO 檔支援後話：</h4>
-		<p>由 版號 1.1.0 開始，Rufus 畀你用 <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">ISO 檔</a> 入落 USB 手指到當係 Boot 機手指用。</p>
-		<p>喺 CD 碟入邊抽個 ISO 檔出嚟其實唔難，不過要做啲手腳。大路嘅免費燒碟程式都做到類似功能，例如 <a target="_blank" href="http://infrarecorder.org/">InfraRecorder</a> 同埋 <a target="_blank" href="https://www.fosshub.com/CDBurnerXP.html">CDBurnerXP</a>。</p>
+		<p>Rufus for Linux allows the creation of a bootable USB drive or disk image from an <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_image">ISO image</a> (.iso).</p>
+		<p>Creating an ISO image from a physical disc or from a set of files is very easy to do however, through the use of a disc burning application such as the freely available <a target="_blank" href="https://www.xorriso.org/">xorriso</a>, or with <a target="_blank" href="https://man7.org/linux/man-pages/man8/dd.8.html">dd</a>.</p>
 	</section>
 	<section class="generic_section" id="FAQ">
 		<h2>FAQ 解答</h2>
-		<p>問到爛嘅問題，都喺 <b><a target="_blank" href="https://github.com/pbatard/rufus/wiki/FAQ">呢邊</a></b> 搵得到。<br/></p>
-		<p>想留個意見畀作者？想話畀作者知邊到有 BUG？想請作者加啲新嘢？可以去 GitHub 個 <a target="_blank" href="https://github.com/pbatard/rufus/issues">問題跟進版面</a> 或者直接 <a target="_blank" href="mailto:pete@akeo.ie?subject=Rufus">Send 封 e-mail</a> 畀作者。</p>
+		<p>A Rufus for Linux FAQ is available <b><a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux/blob/main/linux/README.md">HERE</a></b>.<br/></p>
+		<p>To provide feedback, report a bug or request an enhancement, please use the GitHub <a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux/issues">issue tracker</a>.</p>
 	</section>
 	<section class="generic_section" id="license">
 		<h2>版權協議</h2>
 		<p>根據 <a target="_blank" href="http://www.gnu.org/licenses/gpl.html">GNU General Public License (GPL) version 3</a> 或者再後啲<br />即管自自由由咁拎 Rufus 去分發、改造，甚至做牟利用途 - 只要緊記遵守第三版 GPL 嘅協議就得。</p>
-		<p>（詳情請參閱 <a target="_blank" href="https://github.com/pbatard/rufus">程式原始碼</a>）Rufus 係絕對透明而且公開，喺 <a target="_blank" href="http://mingw-w64.org">MinGW32</a> 環境開發。</p>
+		<p>Rufus for Linux is produced in a 100% transparent manner, from its <a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux">public source</a>, using a <a target="_blank" href="https://www.gnu.org/">GNU/Linux</a> environment (C11, GTK and GNU Make).</p>
+		<p>Rufus for Linux is a native port of Rufus, which was created by <a target="_blank" href="https://github.com/pbatard/rufus">Pete Batard</a>, and the third-party sources it bundles retain their own licensing.</p>
 	</section>
 	<section class="generic_section" id="changelog">
 		<h2>改版記錄 (English ONLY)</h2>
 		<ul dir="ltr">
-			<li><b>版號 4.15</b> (2026.06.30)<ul dir="ltr">
-				<li><span dir="ltr">Add RISC-V 64 support to <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a>.</span></li>
-				<li><span dir="ltr">Improve the guards for using the <i>"silent"</i> Windows installation option.</span></li>
-				<li><span dir="ltr">Improve the ability to cancel during write retries.</span></li>
-				<li><span dir="ltr">Improve progress reporting for compressed image extraction.</span></li>
-				<li><span dir="ltr">Fix unrestricted XML entity expansion and integer overflow in ezxml parser (courtesy of <b>Eric Sadowski</b>).</span></li>
-				<li><span dir="ltr">Fix <i>"silent"</i> Windows installation failing at 75% in most cases.</span></li>
-				<li><span dir="ltr">Fix a crash during boot when using <a target="_blank" href="https://github.com/pbatard/uefi-ntfs">UEFI:NTFS</a> on Snapdragon X based ARM64 platforms.</span></li>
-				<li><span dir="ltr">Fix first WUE option always being checked by default.</span></li>
-				<li><span dir="ltr">Fix an infinite loop when using Windows ISOs that contain multiple WIMs.</span></li>
-				<li><span dir="ltr">Fix <i>"Enable runtime UEFI media validation"</i> checkbox not always being properly enabled.</span></li>
-				<li><span dir="ltr">Other WUE improvements/fixes for OneDrive removal and username validation (with thanks to <b>@christian8641</b>).</span></li>
+			<li><b>版號 0.1.0</b> (2026.09.13)<ul dir="ltr">
+				<li><span dir="ltr">Add a GTK graphical interface, which also compiles cleanly against GTK 3.</span></li>
+				<li><span dir="ltr">Add the <code>rufus-format</code>, <code>rufus-copy</code> and <code>rufus-devlist</code> command line engines.</span></li>
+				<li><span dir="ltr">Add FAT32 and ext2/ext3/ext4 formatting, with exFAT and NTFS delegated to the host <code>mkfs</code> tools.</span></li>
+				<li><span dir="ltr">Add MBR and GPT partition schemes, using the 2048 sector alignment of Windows Rufus, or 2272 for the old BIOS fixes.</span></li>
+				<li><span dir="ltr">Add SYSLINUX v6 BIOS bootloader installation (MBR and FAT32 partition boot record).</span></li>
+				<li><span dir="ltr">Add casper persistence support (<code>persistence.conf</code> on ext file systems, loopback <code>casper-rw</code> file on FAT32).</span></li>
+				<li><span dir="ltr">Add raw, fixed VHD and VHDX image containers, for use with QEMU, KVM or Hyper-V.</span></li>
+				<li><span dir="ltr">Add the advanced format options: bad block scan, full format, extended label and icon files, and dirty-cow scrub pass.</span></li>
+				<li><span dir="ltr">Add byte-for-byte verification of written data, plus SHA-1 and SHA-256 checksums.</span></li>
+				<li><span dir="ltr">Add light and dark themes, progress reporting and cooperative cancellation.</span></li>
+				<li><span dir="ltr">Add <i>make deb</i> and <i>make dist</i> packaging, man pages, a desktop entry and AppStream metainfo.</span></li>
+				<li><span dir="ltr">Add French and German translations.</span></li>
 			</ul></li>
 			<br/>
-			<li><b><a target="_blank" href="https://github.com/pbatard/rufus/blob/master/ChangeLog.txt">其他版號</a></b></li>
+			<li><b><a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux/releases">其他版號</a></b></li>
 		</ul>
 	</section>
 	<section class="generic_section" id="source">
 		<h2>程式原始碼</h2>
-		<ul><li><a target="_blank" href="https://github.com/pbatard/rufus/archive/v4.15.zip">Rufus 4.15</a> <span dir="ltr">(7.5 MB)</span></li>
+		<ul><li><a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux/archive/refs/heads/main.tar.gz">Rufus for Linux 0.1.0</a> <span dir="ltr">(7.5 MB)</span></li>
 		<li>除此之外，亦都畀打指令 <a target="_blank" href="http://git-scm.com">Clone Git</a>：
-		<pre dir="ltr">$ git clone https://github.com/pbatard/rufus</pre></li>
-		<li>或者睇睇 <a target="_blank" href="https://github.com/pbatard/rufus">GitHub 專案</a>。</li></ul>
-		<p>歡迎各路 Programmers 過嚟幫拖，令 Rufus 做得更加好。</p>
+		<pre dir="ltr">$ git clone https://github.com/0peratorXXX/rufusforlinux</pre></li>
+		<li>The port itself lives in the <a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux/tree/main/linux">linux</a> directory, next to the bundled upstream sources in <i>src/</i>.</li>
+		<li>或者睇睇 <a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux">GitHub 專案</a>。</li></ul>
+		<p>If you are a developer, you are very much encouraged to tinker with Rufus for Linux and submit patches.</p>
 	</section>
 	<section class="generic_section" id="donate">
 		<h2>籌錢</h2>
-		<p>成日有人問有冇得捐錢畀我，可惜個答案係 - <b>冇得</b>。</p>
-		<p>個主要原因係由於我唔覺得捐錢係幫得到軟件開發界；衰啲講句，咁做只會令到一啲冇能力捐到錢嘅用家有愧於心。</p>
-		<p>當然，真心好想捐錢支持軟件公益嘅人，可以選擇將錢捐畀一間叫做 <a target="_blank" href="http://www.fsf.org/">Free Software Foundation</a> 嘅團體機構，佢哋絕對係令到 Rufus 賴以成功嘅原因。</p>
-		<p>點都好，我想借今次機會，同大家誠心講聲，<i><u>唔該</u></i>！真係好多謝你哋嘅熱情一路咁撐住呢個程式仔。</p>
-		<p>最後，請繼續自由自在咁用 Rufus 呢個程式仔，冇必要感到一分內疚。就算冇用錢銀撐我都好，更何況你哋本身冇必要咁做。</p>
+		<p>Since we're getting asked about this on regular basis, there is <b>no</b> donation button on this page.</p>
+		<p>Rufus for Linux is free and open source software, developed and released in the open. If it saved you some time, the most useful way to give something back is to <a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux/issues">report bugs</a>, improve the <a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux/tree/main/linux/po">translations</a>, or contribute code.</p>
+		<p>Please feel free to use Rufus for Linux without any guilt about not contributing to it financially &ndash; you should never have to!</p>
 	</section>
 	<section class="generic_section" id="ref1">
-		<h2>(1) Rufus 明確行到邊類型系統嘅 ISO 檔（包括並唔單止）－</h2>
+		<h2>(1) Non exhaustive list of ISOs Rufus for Linux is known to work with</h2>
 		<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><a target="_blank" href="https://almalinux.org">AlmaLinux</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://archlinux.org">Arch&nbsp;Linux</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://archboot.com/">Archboot</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://www.centos.org">CentOS</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://clonezilla.org/clonezilla-live.php">Clonezilla</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="http://www.damnsmalllinux.org">Damn&nbsp;Small&nbsp;Linux</a></td><td>,&nbsp;</td>
+		</tr></table>
+		<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><a target="_blank" href="https://www.debian.org">Debian</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://elementary.io">Elementary OS</a></td><td>,&nbsp;</td>
-		</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a target="_blank" href="https://getfedora.org">Fedora</a></td><td>,&nbsp;</td>
+			<td><a target="_blank" href="https://fedoraproject.org">Fedora</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://www.freedos.org">FreeDOS</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://garudalinux.org">Garuda Linux</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://www.gentoo.org">Gentoo</a></td><td>,&nbsp;</td>
+		</tr></table>
+		<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td><a target="_blank" href="https://gparted.org">GParted</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://www.hirensbootcd.org">Hiren's&nbsp;Boot&nbsp;CD</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://www.kali.org">Kali Linux</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://knoppix.net">Knoppix</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://kolibrios.org">KolibriOS</a></td><td>,&nbsp;</td>
-		</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-			<!--<td><a target="_blank" href="https://kubuntu.org">Kubuntu</a></td><td>,&nbsp;</td>-->
 			<td><a target="_blank" href="https://linuxmint.com">Linux&nbsp;Mint</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://manjaro.org">Manjaro Linux</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://pogostick.net/~pnh/ntpasswd">NT&nbsp;Password&nbsp;Registry&nbsp;Editor</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://www.opensuse.org">OpenSUSE</a></td><td>,&nbsp;</td>
+		</tr></table>
+		<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
+			<td><a target="_blank" href="https://www.opensuse.org">openSUSE</a></td><td>,&nbsp;</td>
+			<td><a target="_blank" href="https://pop.system76.com">Pop!_OS</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://www.raspberrypi.com/software/">Raspberry Pi OS</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://www.raspbian.org">Raspbian</a></td><td>,&nbsp;</td>
-		</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a target="_blank" href="https://reactos.org">ReactOS</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://www.redhat.com">Red&nbsp;Hat</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://www.rodsbooks.com/refind">rEFInd</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://rockylinux.org">Rocky Linux</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="http://www.slackware.com">Slackware</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://www.supergrubdisk.org/category/download/supergrub2diskdownload/super-grub2-disk-stable">Super&nbsp;Grub2&nbsp;Disk</a></td><td>,&nbsp;</td>
+		</tr></table>
+		<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
+			<td><a target="_blank" href="https://www.supergrubdisk.org/category/download/supergrub2diskdownload/super-grub2-disk-stable">Super Grub2 Disk</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://tails.boum.org">Tails</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://trinityhome.org">Trinity&nbsp;Rescue&nbsp;Kit</a></td><td>,&nbsp;</td>
-		</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a target="_blank" href="https://www.truenas.com/download-truenas-core">TrueNAS CORE</a></td><td>,&nbsp;</td>
+			<td><a target="_blank" href="https://trinityhome.org">Trinity Rescue Kit</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://ubuntu.com">Ubuntu</a></td><td>,&nbsp;</td>
 			<td><a target="_blank" href="https://github.com/pbatard/UEFI-Shell/releases">UEFI Shell</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://www.ultimatebootcd.com">Ultimate&nbsp;Boot&nbsp;CD</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-xp">Windows&nbsp;XP&nbsp;<span dir="ltr">(SP2+)</span></a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-vista">Windows&nbsp;Vista</a></td><td>,&nbsp;</td>
-		</tr></table><table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-			<td><a target="_blank" href="https://docs.microsoft.com/en-us/lifecycle/products/windows-7">Windows&nbsp;7</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows8ISO">Windows&nbsp;8/8.1</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows10ISO/">Windows&nbsp;10</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://www.microsoft.com/en-ie/windows-server">Windows&nbsp;Server&nbsp;2019</a></td><td>,&nbsp;</td>
-			<td><a target="_blank" href="https://www.microsoft.com/en-us/software-download/windows11">Windows&nbsp;11</a></td><td>,&nbsp;</td>
+		</tr></table>
+		<table dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
 			<td>&hellip;</td>
 		</tr></table>
 	</section>
 	<div class="footer"><table align="center" dir="ltr" cellspacing="0" cellpadding="0" border="0"><tr>
-		<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2011-2026&nbsp;</td><td><a target="_blank" href="https://pete.akeo.ie">Pete&nbsp;Batard</a></td></tr></table>
-		由<a href="mailto:yue.translator@gmail.com?Subject=Rufus%20Homepage%20translation">粵語社群</a>共同用❤️翻譯<br/>(誠盼繼續使用並珍惜粵語)<br/>		USB 手指圖標設計者係 PC Unleashed<br/>
+		<td>Copyright&nbsp;</td><td>©&nbsp;</td><td>2026&nbsp;</td><td><a target="_blank" href="https://github.com/0peratorXXX/rufusforlinux">Rufus&nbsp;for&nbsp;Linux contributors</a></td></tr></table>
+				USB 手指圖標設計者係 PC Unleashed<br/>
 		Server 架設響 <a target="_blank" href="https://pages.github.com/">GitHub</a>
-		</div> 
+			</div> 
 	</div>
 </body>
 </html>
